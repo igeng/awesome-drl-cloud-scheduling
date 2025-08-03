@@ -18,7 +18,7 @@ A curated list of *Deep Reinforcement Learning (DRL)* research and projects on:
   - [Autoscaling](#autoscaling)  
 - [Open‑Source Projects](#open-source-projects)  
 - [Datasets](#datasets)  
-- [Tools & Frameworks](#tools--frameworks)  
+- [Tools & Frameworks](#tools--frameworks)  
 - [Contributing](#contributing)  
 - [References](#references)  
 - [License](#license)
@@ -75,7 +75,7 @@ This repository collects significant works and tools that leverage DRL for:
 
 ---
 
-## Tools & Frameworks
+## Tools & Frameworks
 
 *(Tools and DRL frameworks that facilitate building and testing scheduling/autoscaling agents.)*
 
