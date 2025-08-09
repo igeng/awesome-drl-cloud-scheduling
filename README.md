@@ -16,6 +16,7 @@ A curated list of *Deep Reinforcement Learning (DRL)* research and projects on:
 - [Research Papers](#research-papers)  
   - [Resource Scheduling](#resource-scheduling)  
   - [Autoscaling](#autoscaling)  
+  - [Edge Computing](#edge-computing)
 - [Open‑Source Projects](#open-source-projects)  
 - [Datasets](#datasets)  
 - [Tools & Frameworks](#tools--frameworks)  
@@ -60,6 +61,11 @@ This repository collects significant works and tools that leverage DRL for:
   *Publication*: OSDI-2020  
   *Summary*: User-facing latency-sensitive web services include numerous distributed, intercommunicating microservices that promise to simplify software development and operation. However, multiplexing of compute resources across microservices is still challenging in production because contention for shared resources can cause latency spikes that violate the service-level objectives (SLOs) of user requests. This paper presents FIRM, an intelligent fine-grained resource management framework for predictable sharing of resources across microservices to drive up overall utilization. FIRM leverages online telemetry data and machine-learning methods to adaptively (a) detect/localize microservices that cause SLO violations, (b) identify low-level resources in contention, and (c) take actions to mitigate SLO violations via dynamic reprovisioning. Experiments across four microservice benchmarks demonstrate that FIRM reduces SLO violations by up to 16x while reducing the overall requested CPU limit by up to 62%. Moreover, FIRM improves performance predictability by reducing tail latencies by up to 11x.
 
+- **[Burst-Aware Predictive Autoscaling for Containerized Microservices](https://ieeexplore.ieee.org/abstract/document/9097467)**  
+  *Authors*: Muhammad Abdullah , Waheed Iqbal , Josep Lluis Berral , Jorda Polo , and David Carrera  
+  *Publication*: TSC-2022  
+  *Summary*:   
+
 - **[AWARE: Automate Workload Autoscaling with Reinforcement Learning in Production Cloud Systems](https://www.usenix.org/conference/atc23/presentation/qiu-haoran)**  
   *Authors*: Haoran Qiu and Weichao Mao, University of Illinois at Urbana-Champaign; Chen Wang, Hubertus Franke, and Alaa Youssef, IBM Research; Zbigniew T. Kalbarczyk, Tamer Başar, and Ravishankar K. Iyer, University of Illinois at Urbana-Champaign  
   *Publication*: ATC-2023  
@@ -81,6 +87,13 @@ This repository collects significant works and tools that leverage DRL for:
   *Authors*: Jin Wang , Jia Hu , Geyong Min , Wenhan Zhan , Albert Y. Zomaya , Fellow, IEEE, and Nektarios Georgalas  
   *Publication*: TC-2022  
   *Summary*: 
+
+## Paper Template
+
+- **[Title](Link)**  
+  *Authors*: Author list  
+  *Publication*: Pub-info  
+  *Summary*:   
 
 ---
 
