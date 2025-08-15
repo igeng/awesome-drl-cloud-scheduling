@@ -107,6 +107,8 @@ This repository collects significant works and tools that leverage DRL for:
 
 *(Datasets for DRL training and evaluation — job traces, metrics logs, cloud simulators, etc.)*
 
+- **[alibaba/clusterdata](https://github.com/alibaba/clusterdata?tab=readme-ov-file)** – Alibaba Cluster Trace Program, cluster data collected from production clusters in Alibaba for cluster management research.
+
 ---
 
 ## Tools & Frameworks
