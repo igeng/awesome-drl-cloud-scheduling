@@ -79,6 +79,16 @@ This repository collects significant works and tools that leverage DRL for:
 - **[HRA: An Intelligent Holistic Resource Autoscaling Framework for Multi-service Applications](https://ieeexplore.ieee.org/document/9885736)**  
   *Authors*: Chunyang Meng, Jingwan Tong, Maolin Pan, Yang Yu  
   *Publication*: ICWS-2022  
+  *Summary*:
+
+- **[DeepScaling: microservices autoscaling for stable CPU utilization in large scale cloud systems](https://dl.acm.org/doi/abs/10.1145/3542929.3563469)**  
+  *Authors*: Ziliang Wang, Shiyi Zhu, Jianguo Li, Wei Jiang, K. K. Ramakrishnan, Yangfei Zheng, Meng Yan, Xiaohong Zhang, Alex X. Liu  
+  *Publication*: SoCC-2022  
+  *Summary*: 
+
+- **[DeepScaling: Autoscaling Microservices With Stable CPU Utilization for Large Scale Production Cloud Systems](https://ieeexplore.ieee.org/abstract/document/10542703)**  
+  *Authors*: Ziliang Wang; Shiyi Zhu; Jianguo Li; Wei Jiang; K. K. Ramakrishnan; Meng Yan  
+  *Publication*: IEEE/ACM Transactions on Networking-2024  
   *Summary*: 
 
 ## Edge Computing
