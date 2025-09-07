@@ -56,6 +56,11 @@ This repository collects significant works and tools that leverage DRL for:
 
 ### Autoscaling
 
+- **[DRPC: Distributed Reinforcement Learning Approach for Scalable Resource Provisioning in Container-Based Clusters](https://ieeexplore.ieee.org/document/10609536#full-text-header)**  
+  *Authors*: Haoyu Bai, Minxian Xu, Kejiang Ye, Rajkumar Buyya, Chengzhong Xu  
+  *Publication*: TSC-2024 
+  *Summary*: Microservices have transformed monolithic applications into lightweight, self-contained, and isolated application components, establishing themselves as a dominant paradigm for application development and deployment in public clouds such as Google and Alibaba. Autoscaling emerges as an efficient strategy for managing resources allocated to microservices’ replicas. However, the dynamic and intricate dependencies within microservice chains present challenges to the effective management of scaled microservices. Additionally, the centralized autoscaling approach can encounter scalability issues, especially in the management of large-scale microservice-based clusters. To address these challenges and enhance scalability, we propose an innovative distributed resource provisioning approach for microservices based on the Twin Delayed Deep Deterministic Policy Gradient algorithm. This approach enables effective autoscaling decisions and decentralizes responsibilities from a central node to distributed nodes. Comparative results with state-of-the-art approaches, obtained from a realistic testbed and traces, indicate that our approach reduces the average response time by 15% and the number of failed requests by 24%, validating improved scalability as the number of requests increases.
+
 - **[FIRM: An Intelligent Fine-grained Resource Management Framework for SLO-Oriented Microservices](https://www.usenix.org/conference/osdi20/presentation/qiu)**  
   *Authors*: Haoran Qiu, Subho S. Banerjee, Saurabh Jha, Zbigniew T. Kalbarczyk, and Ravishankar K. Iyer, University of Illinois at Urbana-Champaign  
   *Publication*: OSDI-2020  
