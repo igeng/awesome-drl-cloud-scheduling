@@ -56,6 +56,11 @@ This repository collects significant works and tools that leverage DRL for:
 
 ### Autoscaling
 
+- **[StatuScale: Status-aware and Elastic Scaling Strategy for Microservice Applications](https://dl.acm.org/doi/abs/10.1145/3686253)**  
+  *Authors*: Linfeng Wen, Minxian Xu, Sukhpal Singh Gill, Muhammad Hilman, Satish Narayana Srirama, Kejiang Ye, Chengzhong Xu  
+  *Publication*: TAAS-2025 
+  *Summary*: Microservice architecture has transformed traditional monolithic applications into lightweight components. Scaling these lightweight microservices is more efficient than scaling servers. However, scaling microservices still faces the challenges resulting from the unexpected spikes or bursts of requests, which are difficult to detect and can degrade performance instantaneously. To address this challenge and ensure the performance of microservice-based applications, we propose a status-aware and elastic scaling framework called StatuScale, which is based on load status detector that can select appropriate elastic scaling strategies for differentiated resource scheduling in vertical scaling. Additionally, StatuScale employs a horizontal scaling controller that utilizes comprehensive evaluation and resource reduction to manage the number of replicas for each microservice. We also present a novel metric named correlation factor to evaluate the resource usage efficiency. Finally, we use Kubernetes, an open source container orchestration and management platform, and realistic traces from Alibaba to validate our approach. The experimental results have demonstrated that the proposed framework can reduce the average response time in the Sock-Shop application by 8.59% to 12.34% and in the Hotel-Reservation application by 7.30% to 11.97%, decrease service level objective violations, and offer better performance in resource usage compared to baselines.
+
 - **[DRPC: Distributed Reinforcement Learning Approach for Scalable Resource Provisioning in Container-Based Clusters](https://ieeexplore.ieee.org/document/10609536#full-text-header)**  
   *Authors*: Haoyu Bai, Minxian Xu, Kejiang Ye, Rajkumar Buyya, Chengzhong Xu  
   *Publication*: TSC-2024 
