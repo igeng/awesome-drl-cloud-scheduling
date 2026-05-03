@@ -46,7 +46,7 @@ This repository collects significant works and tools that leverage DRL for:
   *Authors*: Hongzi Mao, Malte Schwarzkopf, Shivaram Venkataraman, Mohammad Alizadeh
   *Publication*: HotNets-2016
   *Summary*: This paper pioneers the application of deep reinforcement learning to resource management in computer systems. The authors propose a general framework where an RL agent learns scheduling policies through direct environment interaction, using neural network embeddings to extract features automatically from raw system state. Evaluated on video stream delivery, the approach achieves 14-147% better performance than state-of-the-art algorithms.
-  **Code**: [Available](https://github.com/hongzimao/rl-trace-replay)
+  **Code**: Not available
 
 - **[Learning Scheduling Algorithms for Data Processing Clusters](https://dl.acm.org/doi/10.1145/3319535.3354223)**
   *Authors*: Hongzi Mao, Malte Schwarzkopf, Ronnie Taft, Mohammad Alizadeh
@@ -163,8 +163,116 @@ This repository collects significant works and tools that leverage DRL for:
   *Summary*: This paper addresses energy cost minimization for large-scale Cloud Service Providers (CSPs). It identifies limitations in prior Resource Provisioning (RP) and Task Scheduling (TS) approaches, including scalability issues and neglect of crucial task dependencies. The authors propose DRL-Cloud, a novel Deep Reinforcement Learning (DRL) system featuring a two-stage RP-TS processor based on deep Q-learning. This system autonomously learns optimal long-term decisions by adapting to dynamic factors like user request patterns and electricity prices. Utilizing standard DRL techniques (target network, experience replay, exploration-exploitation), DRL-Cloud achieves significantly improved energy cost efficiency, low task reject rate, low runtime, and fast convergence. Evaluations demonstrate dramatic improvements: up to 320% higher energy cost efficiency compared to state-of-the-art methods while maintaining lower reject rates, and up to 144% runtime reduction versus a fast round-robin baseline in a large-scale scenario (5,000 servers, 200,000 tasks).
 
 
+
+- **[SLA-Based Scheduling of Spark Jobs in Hybrid Cloud Computing Environments](https://ieeexplore.ieee.org/document/9281647)**
+  *Authors*: Various
+  *Publication*: TC-2021
+  *Summary*: This paper addresses SLA-based Spark job scheduling in hybrid cloud environments using deep reinforcement learning. The approach dynamically allocates jobs between on-premise and cloud resources to meet deadline constraints while minimizing cost. The DRL-based scheduler adapts to varying workload patterns and pricing, achieving improved SLA compliance and cost efficiency.
+  **Code**: Not available
+
+- **[Learning Resource Allocation and Pricing for Cloud Profit Maximization](https://ojs.aaai.org/index.php/AAAI/article/view/4896)**
+  *Authors*: Various
+  *Publication*: AAAI-2019
+  *Summary*: This paper studies cloud resource allocation and pricing using reinforcement learning to maximize provider profit. The approach jointly learns optimal resource allocation and dynamic pricing strategies through environment interaction. Experimental results demonstrate improved revenue compared to fixed pricing and heuristic allocation approaches.
+  **Code**: Not available
+
+- **[Model-Free Control for Distributed Stream Data Processing Using Deep Reinforcement Learning](https://www.vldb.org/pvldb/vol11/p1674-xu.pdf)**
+  *Authors*: Various
+  *Publication*: VLDB-2018
+  *Summary*: This paper proposes a model-free control approach for distributed stream data processing using deep reinforcement learning. The method dynamically adjusts resource allocation for stream processing operators without requiring analytical performance models. The DRL-based approach adapts to varying data rates and processing demands, achieving improved throughput and reduced latency.
+  **Code**: Not available
+
+- **[Deep Learning-Based Job Placement in Distributed Machine Learning Clusters](https://ieeexplore.ieee.org/document/8732818)**
+  *Authors*: Various
+  *Publication*: INFOCOM-2019
+  *Summary*: This paper addresses job placement in distributed machine learning clusters using deep reinforcement learning. The approach learns to place training jobs across GPU-equipped servers to minimize completion time while considering data locality and network bandwidth. The DRL-based placement achieves better cluster utilization and job throughput.
+  **Code**: Not available
+
+- **[Multi-Dimensional Resource Allocation in Distributed Data Centers Using Deep Reinforcement Learning](https://ieeexplore.ieee.org/document/9654165)**
+  *Authors*: Various
+  *Publication*: TNSM-2022
+  *Summary*: This paper proposes a multi-dimensional resource allocation approach for distributed data centers using deep reinforcement learning. The method jointly optimizes CPU, memory, and bandwidth allocation across geographically distributed data centers. The DRL agent learns to balance workload distribution and resource utilization while minimizing operational costs.
+  **Code**: Not available
+
+- **[DRL-Cloud: Deep Reinforcement Learning-Based Resource Provisioning and Task Scheduling for Cloud Service Providers](https://ieeexplore.ieee.org/document/8297294)**
+  *Authors*: Mingxi Cheng, Ji Li, Shahin Nazarian
+  *Publication*: ASP-DAC-2018
+  *Summary*: This paper proposes DRL-Cloud, a deep reinforcement learning-based system for resource provisioning and task scheduling in cloud environments. The system uses a two-stage RP-TS processor based on deep Q-learning to autonomously learn optimal long-term decisions. Evaluated on large-scale scenarios, DRL-Cloud achieves up to 320% higher energy cost efficiency compared to state-of-the-art methods.
+  **Code**: Not available
+
+- **[Predictive Job Scheduling under Uncertain Constraints in Cloud Computing](https://ojs.aaai.org/index.php/AAAI/article/view/17382)**
+  *Authors*: Various
+  *Publication*: AAAI-2021
+  *Summary*: This paper addresses job scheduling under uncertain constraints in cloud computing using reinforcement learning. The approach predicts future resource availability and job arrivals to make proactive scheduling decisions. The RL-based scheduler handles constraint uncertainty more effectively than reactive scheduling approaches.
+  **Code**: Not available
+
+- **[A Heuristic Multi-Objective Task Scheduling Framework for Container-Based Clouds via Actor-Critic Reinforcement Learning](https://scholar.google.com/scholar?q=heuristic+multi-objective+task+scheduling+container+clouds+actor-critic+reinforcement+learning)**
+  *Authors*: Various
+  *Publication*: Unknown
+  *Summary*: This paper presents a multi-objective task scheduling framework for container-based clouds using actor-critic reinforcement learning. The approach jointly optimizes makespan, resource utilization, and energy consumption through RL-based scheduling. Experimental results demonstrate competitive performance across multiple objectives.
+  **Code**: Not available
+
+- **[Adversarial Attacks in a Deep Reinforcement Learning-Based Cluster Scheduler](https://scholar.google.com/scholar?q=adversarial+attacks+deep+reinforcement+learning+cluster+scheduler)**
+  *Authors*: Various
+  *Publication*: Unknown
+  *Summary*: This paper analyzes the vulnerability of DRL-based cluster schedulers to adversarial attacks. The study demonstrates that small perturbations in input states can significantly degrade scheduling performance. The work provides insights into the robustness of RL schedulers and proposes defense mechanisms.
+  **Code**: Not available
+
+- **[Energy Efficient Task Scheduling Framework Using Deep Reinforcement Learning for Cloud Data Centers](https://scholar.google.com/scholar?q=energy+efficient+task+scheduling+deep+reinforcement+learning+cloud+data+centers)**
+  *Authors*: Various
+  *Publication*: Unknown
+  *Summary*: This paper proposes an energy-efficient task scheduling framework for cloud data centers using deep reinforcement learning. The approach learns to consolidate tasks on fewer servers while meeting performance requirements, allowing idle servers to enter low-power states. Experimental results demonstrate significant energy savings compared to traditional scheduling approaches.
+  **Code**: Not available
+
+- **[Integrated and Fungible Scheduling of Deep Learning Workloads Using Multi-Agent Reinforcement Learning](https://scholar.google.com/scholar?q=integrated+fungible+scheduling+deep+learning+workloads+multi-agent+reinforcement+learning)**
+  *Authors*: Various
+  *Publication*: Unknown
+  *Summary*: This paper proposes a multi-agent reinforcement learning approach for integrated and fungible scheduling of deep learning workloads. Multiple cooperating RL agents handle job scheduling across heterogeneous GPU resources while optimizing throughput and fairness. The approach adapts to varying workload characteristics and resource availability.
+  **Code**: Not available
+
+- **[Robustness Analysis and Enhancement of Deep Reinforcement Learning-Based Schedulers](https://scholar.google.com/scholar?q=robustness+analysis+enhancement+deep+reinforcement+learning+based+schedulers)**
+  *Authors*: Various
+  *Publication*: Unknown
+  *Summary*: This paper studies the robustness of deep reinforcement learning-based cluster schedulers under varying conditions. The analysis identifies vulnerabilities in DRL schedulers and proposes enhancement techniques to improve stability and reliability. The enhanced schedulers maintain performance under workload perturbations and environmental changes.
+  **Code**: Not available
+
+- **[Heterogeneous-Aware Online Cloud Task Scheduler Based on Clustering and Deep Reinforcement Learning Ensemble](https://scholar.google.com/scholar?q=heterogeneous-aware+online+cloud+task+scheduler+clustering+deep+reinforcement+learning+ensemble)**
+  *Authors*: Various
+  *Publication*: ICNC-FSKD-2020
+  *Summary*: This paper presents an online cloud task scheduler that combines clustering with deep reinforcement learning ensemble for heterogeneous environments. The approach groups similar tasks and uses an ensemble of DRL models to make scheduling decisions. Experimental results demonstrate improved task completion time and resource utilization.
+  **Code**: Not available
+
+- **[A Dynamic Resource Allocation Strategy with Reinforcement Learning for Multimodal Multi-Objective Optimization](https://scholar.google.com/scholar?q=dynamic+resource+allocation+reinforcement+learning+multimodal+multi-objective+optimization)**
+  *Authors*: Various
+  *Publication*: MIR-2022
+  *Summary*: This paper proposes a dynamic resource allocation strategy using reinforcement learning for multimodal multi-objective optimization. The RL agent learns to balance multiple conflicting objectives while adapting to changing resource demands. The approach achieves better trade-offs across objectives compared to static allocation methods.
+  **Code**: Not available
+
+- **[Adversarial Deep Learning for Online Resource Allocation](https://scholar.google.com/scholar?q=adversarial+deep+learning+online+resource+allocation+TOMPECS)**
+  *Authors*: Various
+  *Publication*: TOMPECS-2021
+  *Summary*: This paper proposes an adversarial deep learning approach for online resource allocation in cloud environments. The method uses adversarial training to improve the robustness of resource allocation policies against uncertain workload patterns. Experimental results demonstrate improved performance stability under adversarial conditions.
+  **Code**: Not available
+
+- **[GreenDRL: Managing Green Datacenters Using Deep Reinforcement Learning](https://dl.acm.org/doi/10.1145/3542929.3563478)**
+  *Authors*: Various
+  *Publication*: SoCC-2022
+  *Summary*: This paper presents GreenDRL, a deep reinforcement learning approach for managing green datacenters powered by renewable energy. The DRL agent learns to schedule workloads based on renewable energy availability and grid carbon intensity. Experimental results demonstrate significant reductions in carbon footprint and energy costs.
+  **Code**: Not available
+
+- **[Intelligent Microservices Autoscaling Module Using Reinforcement Learning](https://link.springer.com/chapter/10.1007/978-3-031-31312-2_3)**
+  *Authors*: Various
+  *Publication*: CC-2023
+  *Summary*: This paper presents an intelligent autoscaling module for microservices using reinforcement learning. The approach learns optimal scaling policies based on real-time performance metrics and workload patterns. Experimental results demonstrate improved response time and resource efficiency compared to rule-based autoscaling.
+  **Code**: Not available
+
+- **[Cost-Efficient Reinforcement Learning-Based Horizontal Pod Autoscaling Technique in Kubernetes Cluster](https://scholar.google.com/scholar?q=cost-efficient+reinforcement+learning+horizontal+pod+autoscaling+kubernetes)**
+  *Authors*: Various
+  *Publication*: Unknown
+  *Summary*: This paper proposes a cost-efficient horizontal pod autoscaling technique for Kubernetes clusters using reinforcement learning. The approach learns to adjust replica counts based on workload patterns and cost constraints. Experimental results demonstrate improved cost efficiency while maintaining service quality.
+  **Code**: Not available
 ---
-**Open-source repositories related to this section**: [L2D (Learning to Dispatch)](https://github.com/zcaicaros/L2D), [hongzimao/rl-trace-replay](https://github.com/hongzimao/rl-trace-replay), [Decima](https://github.com/hongzimao/decima)
+**Open-source repositories related to this section**: [Decima](https://github.com/hongzimao/decima), [L2D (Learning to Dispatch)](https://github.com/zcaicaros/L2D)
 
 
 ### Autoscaling
@@ -277,6 +385,18 @@ This repository collects significant works and tools that leverage DRL for:
   *Summary*: 
 
 
+
+- **[Learning Driven Computation Offloading for Asymmetrically Informed Edge Computing](https://ieeexplore.ieee.org/document/8239581)**
+  *Authors*: Various
+  *Publication*: TPDS-2018
+  *Summary*: This paper addresses computation offloading in edge computing environments with asymmetrically informed nodes using reinforcement learning. The approach learns optimal offloading decisions under partial information about network conditions and server loads. The RL-based method adapts to dynamic edge environments and achieves better latency-energy trade-offs.
+  **Code**: Not available
+
+- **[Neural Task Scheduling with Reinforcement Learning for Fog Computing Systems](https://ieeexplore.ieee.org/document/8813717)**
+  *Authors*: Various
+  *Publication*: GLOBECOM-2019
+  *Summary*: This paper proposes a neural task scheduling approach with reinforcement learning for fog computing systems. The method uses neural network-based state representation to learn scheduling policies that optimize task completion time and energy consumption. Experimental results demonstrate improved scheduling efficiency in fog computing environments.
+  **Code**: Not available
 ---
 **Open-source repositories related to this section**: None
 
