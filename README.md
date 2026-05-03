@@ -48,6 +48,12 @@ This repository collects significant works and tools that leverage DRL for:
   *Summary*: This paper pioneers the application of deep reinforcement learning to resource management in computer systems. The authors propose a general framework where an RL agent learns scheduling policies through direct environment interaction, using neural network embeddings to extract features automatically from raw system state. Evaluated on video stream delivery, the approach achieves 14-147% better performance than state-of-the-art algorithms.
   **Code**: [Available](https://github.com/hongzimao/rl-trace-replay)
 
+- **[Learning Scheduling Algorithms for Data Processing Clusters](https://dl.acm.org/doi/10.1145/3319535.3354223)**
+  *Authors*: Hongzi Mao, Malte Schwarzkopf, Ronnie Taft, Mohammad Alizadeh
+  *Publication*: SIGCOMM-2019
+  *Summary*: This paper presents Decima, a data-parallel cluster scheduler that uses graph neural networks (GNNs) and reinforcement learning to learn scheduling algorithms directly from examples. Decima represents cluster state as a graph capturing jobs, tasks, and their dependencies, and uses a GNN to extract features for an RL-based scheduling policy. Evaluated on production traces from a large commercial cluster, Decima outperforms state-of-the-art heuristics by 10-100% on key performance metrics such as average job completion time, while handling diverse scheduling objectives without manual tuning.
+  **Code**: [Available](https://github.com/hongzimao/decima)
+
 - **[A Hierarchical Framework of Cloud Resource Allocation and Power Management Using Deep Reinforcement Learning](https://ieeexplore.ieee.org/document/8009034)**
   *Authors*: Tuyen X. Tran, Dario Pompili
   *Publication*: ICDCS-2017
@@ -158,7 +164,7 @@ This repository collects significant works and tools that leverage DRL for:
 
 
 ---
-**Open-source repositories related to this section**: [L2D (Learning to Dispatch)](https://github.com/zcaicaros/L2D), [hongzimao/rl-trace-replay](https://github.com/hongzimao/rl-trace-replay)
+**Open-source repositories related to this section**: [L2D (Learning to Dispatch)](https://github.com/zcaicaros/L2D), [hongzimao/rl-trace-replay](https://github.com/hongzimao/rl-trace-replay), [Decima](https://github.com/hongzimao/decima)
 
 
 ### Autoscaling
