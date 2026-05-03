@@ -1,0 +1,7 @@
+# Ignore scripts and intermediate files
+.scripts/
+*.bak.*
+README_updated.md
+README_final.md
+*.pyc
+__pycache__/
