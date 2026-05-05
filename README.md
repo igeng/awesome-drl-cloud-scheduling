@@ -319,13 +319,13 @@ This repository collects significant works that leverage DRL for cloud schedulin
   **Code**: Not available
 
 - **[SchedInspector: A Batch Job Scheduling Inspector Using Reinforcement Learning](https://scholar.google.com/scholar?q=SchedInspector:+A+Batch+Job+Scheduling+Inspector+Using+Reinforcement+Learning)**
-  *Authors*: TBD (ref [36] in review doc)
+  *Authors*: Di Zhang, Dong Dai, Bing Xie
   *Publication*: HPDC-2022
   *Summary*: This paper takes an inspect-and-correct approach to batch job scheduling in HPC clusters. Rather than replacing the existing scheduler, a reinforcement learning agent monitors scheduler decisions and predicts their outcomes (job completion time, resource utilization). When suboptimal decisions are detected, the system flags them and takes corrective actions such as re-prioritizing jobs or reallocating resources. This approach is less disruptive than full scheduler replacement and can be deployed incrementally in production environments.
   **Code**: Not available
 
 - **[DeepJS: Job Scheduling Based on Deep Reinforcement Learning in Cloud Data Center](https://scholar.google.com/scholar?q=DeepJS:+Job+Scheduling+Based+on+Deep+Reinforcement+Learning+in+Cloud+Data+Center)**
-  *Authors*: TBD
+  *Authors*: Fengcun Li, Bo Hu
   *Publication*: ICDBC-2021
   *Summary*: This paper proposes a deep reinforcement learning approach for job scheduling in cloud data centers. The system uses a DRL agent to learn optimal job-to-machine mapping decisions by considering factors such as resource demands, machine availability, and job priority. Experimental results demonstrate improved resource utilization and reduced job completion time compared to traditional scheduling heuristics.
   **Code**: Not available
@@ -381,7 +381,7 @@ This repository collects significant works that leverage DRL for cloud schedulin
   **Code**: Not available
 
 - **[Cost-Efficient Reinforcement Learning-Based Horizontal Pod Autoscaling Technique in Kubernetes Cluster](https://scholar.google.com/scholar?q=Cost-Efficient+Reinforcement+Learning-Based+Horizontal+Pod+Autoscaling+Technique+in+Kubernetes+Cluster)**
-  *Authors*: TBD
+  *Authors*: Yonghyeon Jang
   *Publication*: J. Cloud Comput.-2023
   *Summary*: This paper proposes a reinforcement learning-based horizontal pod autoscaling mechanism for Kubernetes clusters. The RL agent learns optimal scaling policies that balance cost efficiency and SLO compliance by observing pod metrics, workload patterns, and cluster resource states. Experimental results show improved cost-performance trade-offs compared to Kubernetes' default threshold-based autoscaler.
   **Code**: Not available
@@ -449,7 +449,7 @@ This repository collects significant works that leverage DRL for cloud schedulin
 - **[Adversarial Deep Learning for Online Resource Allocation](https://doi.org/10.1145/3494526)**
   *Authors*: Bingqian Du, Zhiyi Huang, Chuan Wu
   *Publication*: TOMPECS-2021
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper proposes an adversarial deep learning approach for designing online algorithms for cloud resource allocation and pricing. Two deep neural networks play a zero-sum game: an adversary generates worst-case input scenarios while the algorithm network learns optimal strategies. A novel per-round update method breaks sequential decision dependencies, enabling convergence to Nash equilibrium and outperforming state-of-the-art online algorithms.
   **Code**: Not available
 
 - **[Robustness Analysis and Enhancement of Deep Reinforcement Learning-Based Schedulers](https://doi.org/10.1109/tpds.2022.3218649)**
@@ -511,85 +511,85 @@ This repository collects significant works that leverage DRL for cloud schedulin
 - **[A Cooperative Coevolution Genetic Programming Hyper-Heuristics Approach for On-Line Resource Allocation in Container-Based Clouds](https://scholar.google.com/scholar?q=A+Cooperative+Coevolution+Genetic+Programming+Hyper-Heuristics+Approach+for+On-Line+Resource+Allocation+in+Container-Based+Clouds)**
   *Authors*: Boxiong Tan, Hui Ma, Yi Mei, Mengjie Zhang
   *Publication*: 2022
-  *Summary*: This paper proposes a heuristic or evolutionary algorithm for cloud task scheduling. The approach uses meta-heuristic optimization techniques (genetic algorithms, PSO, firefly, or memetic algorithms) to find near-optimal scheduling solutions. Experimental results demonstrate competitive performance in terms of makespan, energy efficiency, and resource utilization.
+  *Summary*: Addresses the two-level resource allocation problem in container-based clouds (containers-to-VMs and VMs-to-physical-machines), which existing heuristics like First Fit and Best Fit handle poorly. Proposes CCGP-RAC, a Cooperative Coevolution Genetic Programming hyper-heuristic that learns allocation rules from historical workload traces while accounting for VM overheads, types, and affinity constraints. Experiments show significant energy consumption improvements over state-of-the-art algorithms.
   **Code**: Not available
 
 - **[A discrete PSO-based static load balancing algorithm for distributed simulations in a cloud environment](https://scholar.google.com/scholar?q=A+discrete+PSO-based+static+load+balancing+algorithm+for+distributed+simulations+in+a+cloud+environment)**
   *Authors*: Zhang Miao, Peng Yong, Yang Mei, Yin Quanjun, Xie Xu
   *Publication*: FGCS-2021
-  *Summary*: This paper proposes a heuristic or evolutionary algorithm for cloud task scheduling. The approach uses meta-heuristic optimization techniques (genetic algorithms, PSO, firefly, or memetic algorithms) to find near-optimal scheduling solutions. Experimental results demonstrate competitive performance in terms of makespan, energy efficiency, and resource utilization.
+  *Summary*: Proposes APDPSO (adaptive Pbest discrete PSO), a static load balancing algorithm for distributing federates to hosts in cloud-based parallel simulations. Addresses PSO discretization issues by using a probability- and similarity-based discretisation method and an external archive to update personal best positions, avoiding poor leaders. Evaluated on MATLAB and CloudSim, it improves convergence, swarm diversity, and load balance over existing PSO-based approaches.
   **Code**: Not available
 
 - **[A multi-objective load balancing algorithm for virtual machine placement in cloud data centers based on machine learning](https://scholar.google.com/scholar?q=A+multi-objective+load+balancing+algorithm+for+virtual+machine+placement+in+cloud+data+centers+based+on+machine+learning)**
   *Authors*: Arezoo Ghasemi, Abolfazl Toroghi Haghighat
   *Publication*: Computing-2020
-  *Summary*: This paper proposes a heuristic or evolutionary algorithm for cloud task scheduling. The approach uses meta-heuristic optimization techniques (genetic algorithms, PSO, firefly, or memetic algorithms) to find near-optimal scheduling solutions. Experimental results demonstrate competitive performance in terms of makespan, energy efficiency, and resource utilization.
+  *Summary*: Presents a machine learning-based VM placement strategy for inter-host load balancing in cloud data centers. A learning agent selects VM migration actions and receives rewards based on solution quality, iteratively improving CPU, memory, and bandwidth balance across host machines. Achieves average improvements of 25%, 34%, and 32% in inter-host load balance for processor, memory, and bandwidth respectively compared to the MOVMrB baseline.
   **Code**: Not available
 
 - **[Combining Size-Based Load Balancing with Round-Robin for Scalable Low Latency](https://doi.org/10.1109/tpds.2019.2950621)**
   *Authors*: Jonatha Anselmi
   *Publication*: TPDS-2020
-  *Summary*: This paper proposes a heuristic or evolutionary algorithm for cloud task scheduling. The approach uses meta-heuristic optimization techniques (genetic algorithms, PSO, firefly, or memetic algorithms) to find near-optimal scheduling solutions. Experimental results demonstrate competitive performance in terms of makespan, energy efficiency, and resource utilization.
+  *Summary*: Proposes a scalable load balancing framework that combines size-interval task assignment (SITA) with round-robin dispatching to jointly control variances in both arrival and service processes. The hybrid scheme drives mean job delay to zero in the large-system limit -- a property neither approach achieves alone -- using only a small number of job-size intervals relative to system size. Under highly variable job sizes, it is competitive with the less scalable join-the-shortest-workload algorithm.
   **Code**: Not available
 
 - **[DDMTS: A novel dynamic load balancing scheduling scheme under SLA constraints in cloud computing](https://scholar.google.com/scholar?q=DDMTS%3A%2BA%2Bnovel%2Bdynamic%2Bload%2Bbalancing)**
   *Authors*: Zhao Tong, Xiaomei Deng, Hongjian Chen, Jing Mei
   *Publication*: JPDC-2021
-  *Summary*: This paper proposes a heuristic or evolutionary algorithm for cloud task scheduling. The approach uses meta-heuristic optimization techniques (genetic algorithms, PSO, firefly, or memetic algorithms) to find near-optimal scheduling solutions. Experimental results demonstrate competitive performance in terms of makespan, energy efficiency, and resource utilization.
+  *Summary*: Proposes a deep reinforcement learning-based dynamic load balancing task scheduling algorithm that respects SLA constraints. The DRL agent selects a VM for each incoming task; if the assignment would violate the SLA the task is rejected with a negative reward, otherwise the task executes and the reward reflects post-alignment load balance. Evaluated against Google real-world workload traces, it outperforms baselines in VM load balancing and task rejection rate reduction.
   **Code**: Not available
 
 - **[Hybridization of firefly and Improved Multi-Objective Particle Swarm Optimization algorithm for energy efficient load balancing in Cloud Computing environments](https://scholar.google.com/scholar?q=Hybridization+of+firefly+and+Improved+Multi-Objective+Particle+Swarm+Optimization+algorithm+for+energy+efficient+load+balancing+in+Cloud+Computing+environments)**
   *Authors*: A. Francis Saviour Devaraj, Mohamed Elhoseny, S. Dhanasekaran, E. Laxmi Lydia, K. Shankar
   *Publication*: JPDC-2020
-  *Summary*: This paper proposes a heuristic or evolutionary algorithm for cloud task scheduling. The approach uses meta-heuristic optimization techniques (genetic algorithms, PSO, firefly, or memetic algorithms) to find near-optimal scheduling solutions. Experimental results demonstrate competitive performance in terms of makespan, energy efficiency, and resource utilization.
+  *Summary*: Proposes FIMPSO, a hybrid load balancing algorithm that uses the Firefly algorithm to reduce the search space and an Improved Multi-Objective PSO (IMPSO) to select the global best particle via a point-to-line distance metric. The combined approach improves resource utilization, response time, CPU utilization (98%), memory utilization (93%), and throughput over competing methods in CloudSim experiments.
   **Code**: Not available
 
 - **[Load balancing in cloud computing – A hierarchical taxonomical classification](https://scholar.google.com/scholar?q=Load%2Bbalancing%2Bin%2Bcloud%2Bcomputing%2B%E2%80%93)**
   *Authors*: Shahbaz Afzal, G. Kavitha
   *Publication*: JCCASA-2019
-  *Summary*: This paper proposes a heuristic or evolutionary algorithm for cloud task scheduling. The approach uses meta-heuristic optimization techniques (genetic algorithms, PSO, firefly, or memetic algorithms) to find near-optimal scheduling solutions. Experimental results demonstrate competitive performance in terms of makespan, energy efficiency, and resource utilization.
+  *Summary*: Presents a comprehensive encyclopedic review and hierarchical taxonomy of load balancing techniques in cloud computing, addressing a gap in existing literature that lacks systematic classification. Analyzes the factors causing load unbalancing (overloading and underloading) and highlights advantages and limitations of existing methods. Provides new insights and identifies crucial challenges for developing efficient load balancing algorithms.
   **Code**: Not available
 
 - **[Mobility-Aware Computation Offloading with Adaptive Load Balancing in Small-Cell MEC](https://scholar.google.com/scholar?q=Mobility-Aware+Computation+Offloading+with+Adaptive+Load+Balancing+in+Small-Cell+MEC)**
   *Authors*: Feng Lyu, Zhe Dong, Huaqing Wu, Sijing Duan, Fan Wu, Yaoxue Zhang, Xuemin Sherman Shen
   *Publication*: ICC-2022
-  *Summary*: This paper proposes a heuristic or evolutionary algorithm for cloud task scheduling. The approach uses meta-heuristic optimization techniques (genetic algorithms, PSO, firefly, or memetic algorithms) to find near-optimal scheduling solutions. Experimental results demonstrate competitive performance in terms of makespan, energy efficiency, and resource utilization.
+  *Summary*: Investigates computation task offloading and load balancing in small-cell mobile edge computing systems with unevenly distributed mobile users. Formulates a joint offloading control and load balancing problem to minimize average user computational cost, decomposed via the Tammer method into task offloading control and server grouping sub-problems. Solves them using Kalman Filter techniques and Dueling Double DQN reinforcement learning, outperforming state-of-the-art benchmarks in load balancing and cost reduction.
   **Code**: Not available
 
 - **[Multi objective task scheduling algorithm in cloud computing using grey wolf optimization](https://scholar.google.com/scholar?q=Multi+objective+task+scheduling+algorithm+in+cloud+computing+using+grey+wolf+optimization)**
   *Authors*: Sudheer Mangalampalli, Ganesh Reddy Karri, Mohit Kumar
   *Publication*: Cluster Computing-2022
-  *Summary*: This paper proposes a heuristic or evolutionary algorithm for cloud task scheduling. The approach uses meta-heuristic optimization techniques (genetic algorithms, PSO, firefly, or memetic algorithms) to find near-optimal scheduling solutions. Experimental results demonstrate competitive performance in terms of makespan, energy efficiency, and resource utilization.
+  *Summary*: Proposes MOTSGWO, a nature-inspired multi-objective Grey Wolf Optimization algorithm for runtime task scheduling that considers makespan, energy consumption, resource utilization, and migration time. The technique allocates resources based on user budgets and task priorities, making scheduling decisions dynamically based on cloud resource status and incoming workload demands. Evaluated on CloudSim with synthetic datasets and real-world workload traces from HPC2N and NASA, it outperforms baseline policies across multiple metrics.
   **Code**: Not available
 
 - **[Multi-objective scheduling strategy for scientific workflows in cloud environment: A Firefly-based approach](https://scholar.google.com/scholar?q=Multi-objective%2Bscheduling%2Bstrategy%2Bfor%2Bscientific%2Bworkflows)**
   *Authors*: Mainak Adhikari, Tarachand Amgoth, Satish Narayana Srirama
   *Publication*: AppSoftCom-2019
-  *Summary*: This paper proposes a heuristic or evolutionary algorithm for cloud task scheduling. The approach uses meta-heuristic optimization techniques (genetic algorithms, PSO, firefly, or memetic algorithms) to find near-optimal scheduling solutions. Experimental results demonstrate competitive performance in terms of makespan, energy efficiency, and resource utilization.
+  *Summary*: Introduces a workflow scheduling strategy using the Firefly Algorithm to address multiple conflicting objectives including cloud server workload, makespan, resource utilization, and reliability. A rule-based approach assigns tasks to suitable VM instances to minimize makespan while meeting deadlines. Evaluated on Google cluster traces, it outperforms state-of-the-art algorithms in makespan, reliability, resource utilization, and server load distribution.
   **Code**: Not available
 
 - **[Neural network based multi-objective evolutionary algorithm for dynamic workflow scheduling in cloud computing](https://scholar.google.com/scholar?q=Neural+network+based+multi-objective+evolutionary+algorithm+for+dynamic+workflow+scheduling+in+cloud)**
   *Authors*: Goshgar Ismayilov, Haluk Rahmi Topcuoglu
   *Publication*: FGCS-2020
-  *Summary*: This paper proposes a heuristic or evolutionary algorithm for cloud task scheduling. The approach uses meta-heuristic optimization techniques (genetic algorithms, PSO, firefly, or memetic algorithms) to find near-optimal scheduling solutions. Experimental results demonstrate competitive performance in terms of makespan, energy efficiency, and resource utilization.
+  *Summary*: Models dynamic workflow scheduling as a dynamic multi-objective optimization problem (DMOP) where dynamism arises from resource failures and changing objective counts at runtime. Proposes NN-DNSGA-II, which integrates an artificial neural network with NSGA-II to predict solutions after environmental changes. Optimizes six objectives (makespan, cost, energy, imbalance, reliability, utilization) and significantly outperforms five non-prediction-based alternatives on Pegasus scientific workflows.
   **Code**: Not available
 
 - **[Reliability-Aware Multi-Objective Memetic Algorithm for Workflow Scheduling Problem in Multi-Cloud System](https://scholar.google.com/scholar?q=Reliability-Aware%2BMulti-Objective%2BMemetic%2BAlgorithm%2Bfor%2BWorkflow%2BScheduling%2BProblem%2Bin%2BMulti-Cloud%2BSystem)**
   *Authors*: Shuo Qin, Dechang Pi, Zhongshi Shao, Yue Xu, Yang Chen
   *Publication*: TPDS-2023
-  *Summary*: This paper proposes a heuristic or evolutionary algorithm for cloud task scheduling. The approach uses meta-heuristic optimization techniques (genetic algorithms, PSO, firefly, or memetic algorithms) to find near-optimal scheduling solutions. Experimental results demonstrate competitive performance in terms of makespan, energy efficiency, and resource utilization.
+  *Summary*: Addresses multi-objective workflow scheduling in multi-cloud systems (MOWSP-MCS), optimizing makespan, cost, and reliability while supporting backup techniques for fault tolerance. Proposes RA-MOMA, a reliability-aware memetic algorithm with problem-specific genetic operators for diversification and four critical-path-based neighborhood operators for intensification. Outperforms related algorithms in numerical experiments across diverse system configurations.
   **Code**: Not available
 
 - **[Research and Improvement of Dynamic Highly Available Load Balancing Algorithm for Microservices](https://doi.org/10.1109/aicit55386.2022.9930161)**
   *Authors*: Jianting Li, Guohong Yi, Bingqian Wu, Zhicao Cao, Xiaodong Xu
   *Publication*: 2022
-  *Summary*: This paper proposes a heuristic or evolutionary algorithm for cloud task scheduling. The approach uses meta-heuristic optimization techniques (genetic algorithms, PSO, firefly, or memetic algorithms) to find near-optimal scheduling solutions. Experimental results demonstrate competitive performance in terms of makespan, energy efficiency, and resource utilization.
+  *Summary*: Proposes DWLOAD (Dynamic Weight Loading Algorithm), a smooth polling-based load balancer for microservices that introduces virtual nodes and real-time server weights to handle high-concurrency scenarios. Server weights are computed from recent request counts, response times, and throughput, enabling dynamic load distribution across deployed instances. Simulation shows approximately 50% improvement in QPS processing capability over smooth polling in large-scale scenarios while reducing comprehensive response time.
   **Code**: Not available
 
 - **[Resource scheduling algorithm with load balancing for cloud service provisioning](https://scholar.google.com/scholar?q=Resource+scheduling+algorithm+with+load+balancing+for+cloud+service+provisioning)**
   *Authors*: V. Priya, C. Sathiya Kumar, Ramani Kannan
   *Publication*: AppSoftCom-2019
-  *Summary*: This paper proposes a heuristic or evolutionary algorithm for cloud task scheduling. The approach uses meta-heuristic optimization techniques (genetic algorithms, PSO, firefly, or memetic algorithms) to find near-optimal scheduling solutions. Experimental results demonstrate competitive performance in terms of makespan, energy efficiency, and resource utilization.
+  *Summary*: Proposes an integrated resource scheduling and load balancing approach combining a Fuzzy-based Multidimensional Resource Scheduling (FMRS) model with a Multidimensional Queuing Load Optimization (MQLO) algorithm. FMRS improves resource scheduling efficiency while MQLO dynamically selects requests by class to balance VM utilization and avoid under- or over-utilization. CloudSim experiments show a 7% improvement in resource scheduling efficiency and a 35.5% reduction in response time compared to state-of-the-art methods.
   **Code**: Not available
 
 ---
@@ -924,7 +924,7 @@ This repository collects significant works that leverage DRL for cloud schedulin
   *Summary*: This paper presents UniSched, a unified scheduler for DL training jobs that accommodates different user demands such as deadline constraints, budget limits, and fairness requirements. UniSched uses a multi-objective optimization framework that simultaneously considers job priority, resource efficiency, and user-specified constraints. The scheduler dynamically adapts its scheduling strategy based on workload characteristics and cluster state, achieving better trade-offs between job completion time and resource utilization compared to single-objective schedulers.
   **Code**: Not available
 
-- **[Workload consolidation in alibaba clusters](https://scholar.google.com/scholar?q=Workload%2Bconsolidation%2Bin%2Balibaba%2Bclusters)**
+- **[Workload Consolidation in Alibaba Clusters: The Good, the Bad, and the Ugly](https://scholar.google.com/scholar?q=Workload%2BConsolidation%2Bin%2BAlibaba%2BClusters%3A%2BThe%2BGood%252C%2Bthe%2BBad%252C%2Band%2Bthe%2BUgly)**
   *Authors*: Yongkang Zhang, Yinghao Yu, Wei Wang, Qiukai Chen, Jie Wu, Zuowei Zhang, Jiang Zhong, Tianchen Ding, Qizhen Weng, Lingyun Yang
   *Publication*: SoCC-2022
   *Summary*: This paper presents a comprehensive analysis of workload consolidation strategies in Alibaba production clusters. Using production traces, the study examines co-location patterns between online services (latency-sensitive) and batch jobs (throughput-oriented), identifying key interference factors and optimization opportunities. The analysis reveals that intelligent workload consolidation can improve cluster utilization by 30-50% while maintaining SLA compliance for online services, providing actionable insights for cloud providers.
@@ -1047,7 +1047,7 @@ This repository collects significant works that leverage DRL for cloud schedulin
   **Code**: Not available
 
 - **[Chronus: A Novel Deadline-Aware Scheduler for Deep Learning Training Jobs](https://scholar.google.com/scholar?q=Chronus:+A+Novel+Deadline-Aware+Scheduler+for+Deep+Learning+Training+Jobs)**
-  *Authors*: TBD
+  *Authors*: Wei Gao, Zhisheng Ye, Peng Sun, Yonggang Wen, Tianwei Zhang
   *Publication*: SoCC-2021
   *Summary*: This paper presents Chronus, a deadline-aware scheduler for deep learning training jobs in large-scale GPU clusters. Chronus incorporates job deadline constraints into the scheduling decision process, ensuring that training jobs complete before their deadlines while maximizing cluster utilization. The scheduler uses predictive modeling to estimate job completion times and proactively allocates resources to prevent deadline violations.
   **Code**: Not available
@@ -1065,43 +1065,43 @@ This repository collects significant works that leverage DRL for cloud schedulin
 - **[A bi-metric autoscaling approach for n-tier web applications on kubernetes](https://scholar.google.com/scholar?q=A+bi-metric+autoscaling+approach+for+n-tier+web+applications+on+kubernetes)**
   *Authors*: Changpeng Zhu, Bo Han, Yinliang Zhao
   *Publication*: FCS-2022
-  *Summary*: This paper presents a traditional (non-RL) approach for automatic scaling of cloud resources. The method uses rule-based, model-driven, or prediction-based techniques to adjust resource allocation while maintaining service quality and cost efficiency.
+  *Summary*: This paper proposes a bi-metric autoscaling approach for n-tier web applications running on Kubernetes. It monitors two key metrics simultaneously to make more informed scaling decisions, addressing the limitation of single-metric autoscalers that may misjudge the true resource needs of multi-tier applications.
   **Code**: Not available
 
 - **[AHPA: Adaptive Horizontal Pod Autoscaling Systems on Alibaba Cloud Container Service for Kubernetes](https://scholar.google.com/scholar?q=AHPA+Adaptive+Horizontal+Pod+Autoscaling+Systems+on+Alibaba+Cloud+Container+Service+for+Kubernetes)**
   *Authors*: Zhiqiang Zhou, Chaoli Zhang, Lingna Ma, Jing Gu, Huajie Qian, Qingsong Wen, Liang Sun, Peng Li, Zhimin Tang
   *Publication*: AAAI-2023
-  *Summary*: This paper presents a traditional (non-RL) approach for automatic scaling of cloud resources. The method uses rule-based, model-driven, or prediction-based techniques to adjust resource allocation while maintaining service quality and cost efficiency.
+  *Summary*: This paper presents AHPA, an adaptive horizontal pod autoscaling system deployed in production on Alibaba Cloud Container Service for Kubernetes. AHPA uses a robust decomposition-based forecasting algorithm combined with a performance training model to predict business volume and generate optimal pod adjustment plans. Since deployment across logistics, e-commerce, social networking, and AI media workloads, AHPA has increased CPU utilization by 10% and reduced resource costs by over 20%, while eliminating elastic lag through automatic flexible planning.
   **Code**: Not available
 
 - **[An adaptive auto-scaling framework for cloud resource provisioning](https://scholar.google.com/scholar?q=An+adaptive+auto-scaling+framework+for+cloud+resource+provisioning)**
   *Authors*: Spyridon Chouliaras, Stelios Sotiriadis
   *Publication*: FGCS-2023
-  *Summary*: This paper presents a traditional (non-RL) approach for automatic scaling of cloud resources. The method uses rule-based, model-driven, or prediction-based techniques to adjust resource allocation while maintaining service quality and cost efficiency.
+  *Summary*: This paper introduces ADA-RP, an adaptive auto-scaling framework that uses K-means clustering and convolutional neural networks to categorize future workload demands as High, Medium, or Low based on CPU utilization. The framework scales cloud resources in real time based on predicted demand. Experiments on MySQL containers in Google Cloud Platform show a 48% cost reduction in single-tenant environments and doubled queries per second in multi-tenant environments.
   **Code**: Not available
 
 - **[An Auto-Scaling Approach for Microservices in Cloud Computing Environments](https://doi.org/10.1007/s10723-023-09713-7)**
   *Authors*: Matineh ZargarAzad, Mehrdad Ashtiani
   *Publication*: 2023
-  *Summary*: This paper presents a traditional (non-RL) approach for automatic scaling of cloud resources. The method uses rule-based, model-driven, or prediction-based techniques to adjust resource allocation while maintaining service quality and cost efficiency.
+  *Summary*: This paper proposes a computational model that analyzes workload across all microservices by considering the overall system workload and inter-service function calls, avoiding the need to individually monitor every microservice. A multi-criteria decision-making method then selects candidate microservices for scaling. Experiments show 99% accuracy in load detection, 20-41% improvement in resource utilization, and up to 70% reduction in scaling operations compared to existing methods.
   **Code**: Not available
 
 - **[Application deployment using containers with auto-scaling for microservices in cloud environment](https://doi.org/10.1016/j.jnca.2020.102629)**
   *Authors*: Satish Narayana Srirama, Mainak Adhikari, Souvik Paul
   *Publication*: 2020
-  *Summary*: This paper presents a traditional (non-RL) approach for automatic scaling of cloud resources. The method uses rule-based, model-driven, or prediction-based techniques to adjust resource allocation while maintaining service quality and cost efficiency.
+  *Summary*: This paper addresses the deployment and auto-scaling of containerized microservices in cloud environments, focusing on efficient resource provisioning to meet dynamic workload demands. The approach leverages container orchestration to manage microservice deployment and automatically scale resources based on application requirements, minimizing resource cost while satisfying Quality of Service constraints.
   **Code**: Not available
 
 - **[ATOM: Model-Driven Autoscaling for Microservices](https://scholar.google.com/scholar?q=ATOM:+Model-Driven+Autoscaling+for+Microservices)**
   *Authors*: Alim Ul Gias, Giuliano Casale, Murray Woodside
   *Publication*: ICDCS-2019
-  *Summary*: This paper presents a traditional (non-RL) approach for automatic scaling of cloud resources. The method uses rule-based, model-driven, or prediction-based techniques to adjust resource allocation while maintaining service quality and cost efficiency.
+  *Summary*: This paper proposes ATOM, a model-driven autoscaling controller that instantiates and solves a layered queueing network model of the microservice application at runtime. ATOM uses computational optimization to dynamically control both replica counts and CPU shares per microservice. Under heavy workloads, ATOM delivers 30-37% higher throughput than model-agnostic baselines while reducing scaling actions and bottleneck shifts.
   **Code**: Not available
 
 - **[Auto-Scaling Web Applications in Clouds: A Taxonomy and Survey](https://scholar.google.com/scholar?q=Auto-Scaling+Web+Applications+in+Clouds+A+Taxonomy+and+Survey)**
   *Authors*: Chenhao Qu, Rodrigo N. Calheiros, Rajkumar Buyya
   *Publication*: ACMComSur-2018
-  *Summary*: This paper presents a traditional (non-RL) approach for automatic scaling of cloud resources. The method uses rule-based, model-driven, or prediction-based techniques to adjust resource allocation while maintaining service quality and cost efficiency.
+  *Summary*: This paper provides a comprehensive survey and taxonomy of auto-scaling approaches for web applications in cloud environments, analyzing challenges and key properties that define different auto-scaler designs. The authors categorize existing works according to their taxonomy to identify weaknesses and gaps, and propose future research directions for improving cloud auto-scaling mechanisms.
   **Code**: Not available
 
 - **[Autopilot: Workload Autoscaling at Google Scale](https://scholar.google.com/scholar?q=Autopilot:+Workload+Autoscaling+at+Google+Scale)**
@@ -1113,84 +1113,84 @@ This repository collects significant works that leverage DRL for cloud schedulin
 - **[BASE: Burst-Adaptive Autoscaling via Stacked Ensembles for SLO Assurance and Cost Efficiency](https://scholar.google.com/scholar?q=BASE%3A%2BBurst-Adaptive%2BAutoscaling%2Bvia%2BStacked%2BEnsembles%2Bfor%2BSLO%2BAssurance%2Band%2BCost%2BEfficiency)**
   *Authors*: Chunyang Meng, Haogang Tong, Tianyang Wu, Maolin Pan, Yang Yu, Yi Jiang
   *Publication*: arXiv-2024
-  *Summary*: This paper presents a traditional (non-RL) approach for automatic scaling of cloud resources. The method uses rule-based, model-driven, or prediction-based techniques to adjust resource allocation while maintaining service quality and cost efficiency.
+  *Summary*: This paper presents BASE, a burst-adaptive autoscaling system that uses stacked ensemble machine learning models to detect and respond to workload bursts in cloud microservices. The approach simultaneously assures Service Level Objectives and optimizes cost efficiency by adapting scaling behavior based on workload burst patterns.
   **Code**: Not available
 
 - **[Cdascaler: a cost-effective dynamic autoscaling approach for containerized microservices](https://doi.org/10.1007/s10586-023-04228-y)**
   *Authors*: Numan Shafi, Muhammad Abdullah, Waheed Iqbal, Abdelkarim Erradi, Faisal Bukhari
   *Publication*: 2024
-  *Summary*: This paper presents a traditional (non-RL) approach for automatic scaling of cloud resources. The method uses rule-based, model-driven, or prediction-based techniques to adjust resource allocation while maintaining service quality and cost efficiency.
+  *Summary*: This paper presents Cdascaler, which addresses the problem of dynamically allocating the right amount of CPU resources to containers during autoscaling events, going beyond simply deciding how many containers to add or remove. Machine learning predicts appropriate CPU allocation for each container spawned for microservices over time. Experiments on Kubernetes show a 40-60% reduction in response time SLO violations at 0.5x to 1.5x lower cost compared to state-of-the-art baselines.
   **Code**: Not available
 
 - **[Chameleon: A Hybrid, Proactive Auto-Scaling Mechanism on a Level-Playing Field](https://scholar.google.com/scholar?q=Chameleon%3A%2BA%2BHybrid%2BProactive%2BAuto-Scaling%2BMechanism%2Bon%2Ba%2BLevel-Playing%2BField)**
   *Authors*: Andre Bauer, Nikolas Herbst, Simon Spinner, Ahmed Ali-Eldin, Samuel Kounev
   *Publication*: TPDS-2019
-  *Summary*: This paper presents a traditional (non-RL) approach for automatic scaling of cloud resources. The method uses rule-based, model-driven, or prediction-based techniques to adjust resource allocation while maintaining service quality and cost efficiency.
+  *Summary*: This paper proposes Chameleon, a hybrid autoscaling mechanism that combines multiple proactive time series-based forecasting methods with a reactive fallback to reduce the risk of relying on a single prediction method. Chameleon uses automated load intensity forecasting together with runtime service demand estimation to calculate required resources without application instrumentation. Evaluated over 400 hours across three cloud environments with five real-world workload traces, Chameleon outperforms five state-of-the-art autoscalers on both user-facing and elasticity metrics.
   **Code**: Not available
 
 - **[Coordinating Fast Concurrency Adapting With Autoscaling for SLO-Oriented Web Applications](https://doi.org/10.1109/tpds.2022.3151512)**
   *Authors*: Jianshu Liu, Shungeng Zhang, Qingyang Wang, Jinpeng Wei
   *Publication*: TPDS-2022
-  *Summary*: This paper presents a traditional (non-RL) approach for automatic scaling of cloud resources. The method uses rule-based, model-driven, or prediction-based techniques to adjust resource allocation while maintaining service quality and cost efficiency.
+  *Summary*: This paper demonstrates that scaling a bottleneck server without quickly adjusting its soft resources (server threads, database connections) causes significant response time fluctuations because soft resources determine per-server request concurrency. The authors propose the Scatter-Concurrency-Throughput (SCT) model to rapidly identify near-optimal soft resource allocation and implement ConScale, a framework that integrates SCT to reallocate soft resources after hardware scaling. Experiments show ConScale successfully mitigates response time fluctuations during scaling in both VM-based (EC2 AutoScaling) and container-based (Kubernetes HPA) environments.
   **Code**: Not available
 
 - **[Deep Learning-Based Autoscaling Using Bidirectional Long Short-Term Memory for Kubernetes](https://doi.org/10.3390/app11093835)**
   *Authors*: Nhat-Minh Dang-Quang, Myungsik Yoo
   *Publication*: 2021
-  *Summary*: This paper presents a traditional (non-RL) approach for automatic scaling of cloud resources. The method uses rule-based, model-driven, or prediction-based techniques to adjust resource allocation while maintaining service quality and cost efficiency.
+  *Summary*: This paper proposes a proactive custom autoscaler for Kubernetes based on the MAPE loop, using a Bidirectional LSTM to predict future HTTP workload patterns. The planning phase implements a cooling-down period to mitigate oscillation and a resource removal strategy to handle workload bursts more effectively. The Bi-LSTM achieves better prediction accuracy than both LSTM and ARIMA models while offering 530-600x faster prediction speed, and the autoscaler outperforms the default Kubernetes HPA in both accuracy and provisioning speed.
   **Code**: Not available
 
 - **[DeepScaling: Autoscaling Microservices With Stable CPU Utilization for Large Scale Production Cloud Systems](https://scholar.google.com/scholar?q=DeepScaling:+Autoscaling+Microservices+With+Stable+CPU+Utilization+for+Large+Scale+Production+Cloud+Systems)**
   *Authors*: Ziliang Wang, Shiyi Zhu, Jianguo Li, Wei Jiang, K. K. Ramakrishnan, Meng Yan, Xiaohong Zhang, Alex X. Liu
   *Publication*: SoCC-2022
-  *Summary*: This paper presents a traditional (non-RL) approach for automatic scaling of cloud resources. The method uses rule-based, model-driven, or prediction-based techniques to adjust resource allocation while maintaining service quality and cost efficiency.
+  *Summary*: This paper presents DeepScaling, an autoscaling system for large-scale production cloud microservice systems that maintains stable CPU utilization across microservices. The system uses deep learning-based workload prediction to proactively adjust microservice replicas, preventing both CPU overutilization and underutilization. DeepScaling is deployed and evaluated in production-scale cloud environments to demonstrate effectiveness at scale.
   **Code**: Not available
 
 - **[Erlang: Application-Aware Autoscaling for Cloud Microservices](https://scholar.google.com/scholar?q=Erlang%3A%2BApplication-Aware%2BAutoscaling%2Bfor%2BCloud%2BMicroservices)**
   *Authors*: Vighnesh Sachidananda, Anirudh Sivaraman
   *Publication*: arXiv-2022
-  *Summary*: This paper presents a traditional (non-RL) approach for automatic scaling of cloud resources. The method uses rule-based, model-driven, or prediction-based techniques to adjust resource allocation while maintaining service quality and cost efficiency.
+  *Summary*: This paper argues that per-microservice threshold-based autoscaling is suboptimal because end-to-end latency depends on multiple microservices in the request path, each potentially requiring a different number of VMs. Erlang introduces an application-aware autoscaling approach that considers the full request path and makes coordinated scaling decisions across all microservices, optimizing for both dollar cost and end-to-end user-perceived latency rather than per-service CPU utilization.
   **Code**: Not available
 
 - **[Horizontal Pod Autoscaling in Kubernetes Cluster Using Long Short-Term Memory](https://scholar.google.com/scholar?q=Horizontal%2BPod%2BAutoscaling%2Bin%2BKubernetes%2BCluster)**
   *Authors*: Somshekar Patil, D. G. Narayan, Ajeya Bhat, Aishwarya Hungund, Disha M. Patil
   *Publication*: 2024
-  *Summary*: This paper presents a traditional (non-RL) approach for automatic scaling of cloud resources. The method uses rule-based, model-driven, or prediction-based techniques to adjust resource allocation while maintaining service quality and cost efficiency.
+  *Summary*: This paper presents an LSTM-based horizontal pod autoscaler for Kubernetes that uses long short-term memory neural networks to predict future workload demands and proactively adjust pod replicas. By replacing the default reactive HPA with a prediction-driven approach, the system aims to reduce scaling latency and improve resource utilization for containerized microservices under fluctuating workloads.
   **Code**: Not available
 
 - **[PBScaler: A Bottleneck-Aware Autoscaling Framework for Microservice-Based Applications](https://doi.org/10.1109/tsc.2024.3376202)**
   *Authors*: Shuaiyu Xie, Jian Wang, Bing Li, Zekun Zhang, Duantengchuan Li, Patrick C. K. Hung
   *Publication*: TSC-2024
-  *Summary*: This paper presents a traditional (non-RL) approach for automatic scaling of cloud resources. The method uses rule-based, model-driven, or prediction-based techniques to adjust resource allocation while maintaining service quality and cost efficiency.
+  *Summary*: This paper addresses the challenge of identifying root performance bottlenecks in microservice applications, where performance anomalies propagate through service dependencies and make it difficult to determine which microservices need scaling. PBScaler introduces TopoRank, a random walk algorithm based on topological potential, to accurately locate performance bottlenecks and reduce unnecessary scaling. Combined with an offline performance-aware optimization algorithm for replica management, PBScaler mitigates performance degradation while conserving resources more efficiently than existing approaches.
   **Code**: Not available
 
 - **[Practical Efficient Microservice Autoscaling with QoS Assurance](https://scholar.google.com/scholar?q=Practical+Efficient+Microservice+Autoscaling+with+QoS+Assurance)**
   *Authors*: Md Rajib Hossen, Mohammad A. Islam, Kishwar Ahmed
   *Publication*: HPDC-2022
-  *Summary*: This paper presents a traditional (non-RL) approach for automatic scaling of cloud resources. The method uses rule-based, model-driven, or prediction-based techniques to adjust resource allocation while maintaining service quality and cost efficiency.
+  *Summary*: This paper proposes PEMA, a lightweight resource manager that finds efficient resource allocations for microservices through opportunistic resource reduction, avoiding the extensive training data and intentional SLO violations required by ML-heavy approaches. Experiments across three prototype microservice implementations show PEMA saves up to 33% resource compared to commercial rule-based allocation while maintaining QoS guarantees.
   **Code**: Not available
 
 - **[Proactive Autoscaling for Cloud-Native Applications using Machine Learning](https://doi.org/10.1109/globecom42002.2020.9322147)**
   *Authors*: Nicolas Marie-Magdelaine, Toufik Ahmed
   *Publication*: GLOBECOM-2020
-  *Summary*: This paper presents a traditional (non-RL) approach for automatic scaling of cloud resources. The method uses rule-based, model-driven, or prediction-based techniques to adjust resource allocation while maintaining service quality and cost efficiency.
+  *Summary*: This paper proposes a proactive autoscaling framework using an LSTM-based forecasting model to dynamically adjust both horizontal scaling (number of replicas) and vertical scaling (resource pool) for cloud-native microservice applications. A proof-of-concept implementation demonstrates the effectiveness of the proactive LSTM-based algorithm in improving end-to-end latency compared to reactive feedback-loop autoscaling.
   **Code**: Not available
 
 - **[ProScale: Proactive Autoscaling for Microservice With Time-Varying Workload at the Edge](https://doi.org/10.1109/tpds.2023.3238429)**
   *Authors*: Ke Cheng, Sheng Zhang, Chenghong Tu, Xiaohang Shi, Zhaoheng Yin, Sanglu Lu, Yu Liang, Qing Gu
   *Publication*: TPDS-2023
-  *Summary*: This paper presents a traditional (non-RL) approach for automatic scaling of cloud resources. The method uses rule-based, model-driven, or prediction-based techniques to adjust resource allocation while maintaining service quality and cost efficiency.
+  *Summary*: This paper identifies that existing edge microservice autoscaling approaches impractically assume each microservice's workload depends solely on its upstream, a claim refuted through analysis of Alibaba's trace with hundreds of millions of records. ProScale proactively forecasts per-microservice workload per timeslot and uses an efficient online algorithm to jointly determine instance numbers and placement decisions, with a designed offloading strategy for burst requests. Trace-driven experiments show ProScale reduces average response time by 96.7% and resource usage by 96.5% compared to existing strategies.
   **Code**: Not available
 
 - **[RobustScaler: QoS-Aware Autoscaling for Complex Workloads](https://doi.org/10.1109/icde53745.2022.00252)**
   *Authors*: Huajie Qian, Qingsong Wen, Liang Sun, Jing Gu, Qiulin Niu, Zhimin Tang
   *Publication*: ICDE-2022
-  *Summary*: This paper presents a traditional (non-RL) approach for automatic scaling of cloud resources. The method uses rule-based, model-driven, or prediction-based techniques to adjust resource allocation while maintaining service quality and cost efficiency.
+  *Summary*: This paper investigates proactive autoscaling for scaling-per-query applications such as container registry and function-as-a-service, where workloads exhibit high uncertainty with complex temporal patterns including periodicity, noise, and outliers. RobustScaler uses non-homogeneous Poisson process modeling combined with stochastically constrained optimization to achieve a superior trade-off between resource cost and QoS. A specialized ADMM algorithm efficiently trains the model, and experiments on real-world traces show large improvements over baseline strategies for complex workload patterns.
   **Code**: Not available
 
-- **[Collective Autoscaling for Cloud Microservices](https://arxiv.org/abs/2203.04567)**
-  *Authors*: TBD
-  *Publication*: arXiv-2022
+- **[Collective Autoscaling for Cloud Microservices](https://doi.org/10.1145/3627703.3650084)**
+  *Authors*: Vighnesh Sachidananda, Anirudh Sivaraman
+  *Publication*: SoCC-2024 (originally arXiv-2022)
   *Summary*: This paper addresses autoscaling for cloud microservice systems by coordinating scaling decisions across interconnected services. Traditional autoscaling operates independently per service, which can lead to suboptimal outcomes when services have interdependent resource demands. The collective approach jointly optimizes scaling decisions across the service dependency graph, reducing cascading scaling delays and improving end-to-end SLO compliance.
   **Code**: Not available
 
@@ -1201,151 +1201,151 @@ This repository collects significant works that leverage DRL for cloud schedulin
 - **[A load balance oriented cost efficient scheduling method for parallel tasks](https://scholar.google.com/scholar?q=A+load+balance+oriented+cost+efficient+scheduling+method+for+parallel+tasks)**
   *Authors*: Yu Xin, Zhi-Qiang Xie, Jing Yang
   *Publication*: JNCA-2017
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper proposes a load-balance-oriented scheduling method for parallel tasks in cloud computing that aims to improve resource utilization and reduce execution time. The approach constructs a task dependency graph and applies a cost-efficient scheduling strategy that considers both computational load distribution and communication overhead. Experiments demonstrate improved load balancing and reduced makespan compared to conventional scheduling approaches.
   **Code**: Not available
 
 - **[Affinity-Aware Resource Provisioning for Long-Running Applications in Shared Clusters](https://scholar.google.com/scholar?q=Affinity-Aware%2BResource%2BProvisioning%2Bfor%2BLong-Running%2BApplications%2Bin%2BShared%2BClusters)**
   *Authors*: Clement Mommessin, Renyu Yang, Natalia Shakhlevich, Xiaoyang Sun, Satish Kumar, Junqing Xiao, Jie Xu
   *Publication*: JPDC-2023
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper addresses the problem of resource provisioning for long-running applications in shared cloud clusters with affinity constraints. It develops an affinity-aware provisioning strategy that co-locates dependent application components to reduce communication latency while respecting resource capacity constraints. The approach formulates the problem as an optimization model and evaluates it using real-world cluster workloads, showing improved application performance and resource efficiency.
   **Code**: Not available
 
 - **[Cost-efficient dynamic scheduling of big data applications in apache spark on cloud](https://scholar.google.com/scholar?q=Cost-efficient%2Bdynamic%2Bscheduling%2Bof%2Bbig%2Bdata)**
   *Authors*: Muhammed Tawfiqul Islam, Satish Narayana Srirama, Shanika Karunasekera, Rajkumar Buyya
   *Publication*: JSS-2020
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper proposes a cost-efficient dynamic scheduling approach for Apache Spark applications running on cloud infrastructure. The method dynamically allocates and releases cloud resources based on application workload characteristics and deadline constraints, using a cost-optimization model to minimize cloud expenditure. Experimental evaluation on real Spark workloads demonstrates significant cost savings while meeting application deadlines.
   **Code**: Not available
 
-- **[DDRM: An SLO-aware Deep Dynamic Resource Management Framework for Microservices](https://scholar.google.com/scholar?q=DDRM%3A%2BAn%2BSLO-aware%2BDeep%2BDynamic%2BResource%2BManagement%2BFramework%2Bfor%2BMicroservices)**
+- **[DDRM: An SLO-aware Deep Dynamic Resource Management Framework for Microservices](https://scholar.google.com/scholar?q=DDRM%3A%2BAn%2BSLO-aware%2BDeep%2BDynamic%2BDynamic%2BResource%2BManagement%2BFramework%2Bfor%2BMicroservices)**
   *Authors*: Liangping Tang, Jin Wang, Wanyou Wang, Gaotao Shi, Zhijun Li
   *Publication*: OSDI-2020
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper presents DDRM, a deep learning-based dynamic resource management framework for microservices that ensures SLO compliance. The system uses deep neural networks to predict workload patterns and proactively adjusts resource allocation across microservice instances. By combining predictive modeling with dynamic resource scaling, DDRM reduces SLO violations and improves resource utilization in production microservice deployments.
   **Code**: Not available
 
 - **[Deep Learning and Cloud Computing](https://scholar.google.com/scholar?q=Deep%2BLearning%2Band%2BCloud%2BComputing)**
   *Authors*: Pramod Gupta, Naresh K. Sehgal
   *Publication*: Code-2021
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper explores the integration of deep learning techniques with cloud computing infrastructure, examining how cloud platforms can support large-scale deep learning workloads. It discusses architectural considerations for deploying deep learning models in the cloud, including distributed training, model serving, and resource provisioning. The work provides a survey of existing approaches and identifies challenges in efficiently combining deep learning with cloud resource management.
   **Code**: Not available
 
 - **[Detection of SLA Violation for Big Data Analytics Applications in Cloud](https://doi.org/10.1109/tc.2020.2995881)**
   *Authors*: Xuezhi Zeng, Saurabh Garg, Mutaz Barika, Sanat Bista, Deepak Puthal, Albert Y. Zomaya, Rajiv Ranjan
   *Publication*: TC-2021
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper presents a proactive approach for detecting SLA violations in cloud-hosted big data analytics applications. The method monitors application performance metrics and uses predictive models to identify potential SLA breaches before they occur, enabling timely corrective actions. Experiments on cloud platforms demonstrate the approach's effectiveness in reducing SLA violation rates for data-intensive analytics workloads.
   **Code**: Not available
 
 - **[Distributed resource management across process boundaries](https://scholar.google.com/scholar?q=Distributed+resource+management+across+process+boundaries)**
   *Authors*: Lalith Suresh, Peter Bodik, Ishai Menache, Marco Canini, Florin Ciucu
   *Publication*: SoCC-2017
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper addresses the challenge of managing resources across distributed processes in cloud environments, where traditional resource managers operate within isolated boundaries. It proposes a distributed resource management protocol that enables cross-process resource sharing and coordination without requiring centralized control. The system achieves improved resource utilization and fairness by enabling processes to negotiate resource allocations directly with one another.
   **Code**: Not available
 
 - **[Erms: Efficient Resource Management for Shared Microservices with SLA Guarantees](https://scholar.google.com/scholar?q=Erms:+Efficient+Resource+Management+for+Shared+Microservices+with+SLA+Guarantees)**
   *Authors*: Shutian Luo, Huanle Xu, Kejiang Ye, Guoyao Xu, Liping Zhang, Jian He, Guodong Yang, Chengzhong Xu
   *Publication*: ASPLOS-2023
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper presents ERMS, a system for efficient resource management of shared microservices that guarantees SLA compliance. The framework dynamically allocates CPU and memory resources among co-located microservice instances using interference-aware scheduling and performance isolation mechanisms. Experiments on production workloads show that ERMS significantly improves resource utilization while maintaining SLO targets for latency-sensitive microservices.
   **Code**: Not available
 
 - **[Generating Complex, Realistic Cloud Workloads using Recurrent Neural Networks](https://scholar.google.com/scholar?q=Generating+Complex+Realistic+Cloud+Workloads+using+Recurrent+Neural+Networks)**
   *Authors*: Shane Bergsma, Timothy Zeyl, Arik Senderovich, J. Christopher Beck
   *Publication*: SOSP-2021
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper proposes using recurrent neural networks to generate realistic cloud workload traces that capture the complex temporal patterns and correlations found in production systems. The RNN-based generator learns from historical workload data to produce synthetic traces that preserve statistical properties such as burstiness, periodicity, and inter-task dependencies. The generated workloads can be used for benchmarking and evaluating cloud scheduling algorithms without requiring access to production traces.
   **Code**: Not available
 
 - **[HSACMA: a hierarchical scalable adaptive cloud monitoring architecture](https://scholar.google.com/scholar?q=HSACMA:+a+hierarchical+scalable+adaptive+cloud+monitoring+architecture)**
   *Authors*: Rui Wang, Shi Ying, Meiyan Li, Shun Jia
   *Publication*: SQJ-2020
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper proposes HSACMA, a hierarchical and adaptive architecture for monitoring large-scale cloud environments. The system organizes monitoring agents into a multi-level hierarchy that dynamically adjusts its structure based on workload changes and resource availability, enabling scalable data collection and analysis. Experimental results demonstrate that HSACMA achieves lower monitoring overhead and better scalability compared to flat monitoring architectures in large cloud deployments.
   **Code**: Not available
 
 - **[Hydra: Deadline-Aware and Efficiency-Oriented Scheduling for Deep Learning Jobs on Heterogeneous GPUs](https://doi.org/10.1109/tc.2023.3242200)**
   *Authors*: Zichao Yang, Heng Wu, Yuanjia Xu, Yuewen Wu, Hua Zhong, Wenbo Zhang
   *Publication*: 2023
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper presents Hydra, a scheduling system for deep learning jobs on heterogeneous GPU clusters that jointly optimizes for deadline adherence and resource efficiency. Hydra incorporates job deadline information and GPU heterogeneity characteristics into its scheduling decisions, using a combination of profiling-based performance prediction and priority-aware resource allocation. Experiments show that Hydra improves job completion rates and GPU utilization compared to existing GPU scheduling approaches.
   **Code**: Not available
 
 - **[K8sSim: A Simulation Tool for Kubernetes Schedulers and Its Applications in Scheduling Algorithm Optimization](https://doi.org/10.3390/mi14030651)**
   *Authors*: Shilin Wen, Rui Han, Ke Qiu, Xiaoxin Ma, Zeqing Li, Hongjie Deng, Chi Harold Liu
   *Publication*: MicroM-2023
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper presents K8sSim, a simulation tool that enables rapid evaluation and optimization of Kubernetes scheduling algorithms without requiring a physical cluster. The simulator faithfully reproduces the Kubernetes scheduling behavior, including pod placement decisions, resource accounting, and scheduling queue management. Using K8sSim, the authors demonstrate how different scheduling strategies can be compared efficiently and propose optimizations that improve scheduling throughput and resource utilization.
   **Code**: Not available
 
 - **[Learning Resource Allocation and Pricing for Cloud Profit Maximization](https://aaai.org/ojs/index.php/AAAI/article/view/4339)**
   *Authors*: Bingqian Du, Chuan Wu, Zhiyi Huang
   *Publication*: AAAI-2019
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper addresses the joint problem of resource allocation and pricing for cloud providers to maximize profit. It formulates the problem as an online learning framework where the cloud provider dynamically adjusts resource allocation and pricing based on observed user demand patterns. The proposed algorithm achieves provable competitive ratios and demonstrates superior profit performance compared to static pricing and allocation strategies through trace-driven simulations.
   **Code**: Not available
 
 - **[Learning scheduling algorithms for data processing clusters](https://scholar.google.com/scholar?q=Learning+scheduling+algorithms+for+data+processing+clusters)**
   *Authors*: Hongzi Mao, Malte Schwarzkopf, Shaileshh Bojja Venkatakrishnan, Zili Meng, Mohammad Alizadeh
   *Publication*: SIGCOMM-2019
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper presents Decima, a learned scheduler for data processing clusters that uses reinforcement learning to make scheduling decisions across multiple stages of data-parallel jobs. Decima represents the cluster state as a graph and employs a graph neural network to generalize across different workload sizes and cluster topologies. Evaluation on production traces from Apache Spark clusters shows that Decima significantly reduces average job completion time compared to hand-crafted scheduling heuristics.
   **Code**: Not available
 
 - **[Maintaining SLOs of Cloud-Native Applications Via Self-Adaptive Resource Sharing](https://doi.org/10.1109/saso.2019.00018)**
   *Authors*: Vladimir Podolskiy, Michael Mayo, Abigail Koay, Michael Gerndt, Panos Patros
   *Publication*: SASO-2019
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper proposes a self-adaptive resource sharing mechanism for cloud-native applications that dynamically redistributes resources among co-located services to maintain SLO targets. The approach continuously monitors application performance and automatically adjusts resource partitions based on observed workload patterns and interference effects. Experimental evaluation on Kubernetes demonstrates that the system effectively maintains SLO compliance under variable workloads while improving overall cluster utilization.
   **Code**: Not available
 
 - **[Memory-harvesting VMs in cloud platforms](https://scholar.google.com/scholar?q=Memory-harvesting+VMs+in+cloud+platforms)**
   *Authors*: Alexander Fuerst, Stanko Novaković, Íñigo Goiri, Gohar Irfan Chaudhry, Prateek Sharma, Kapil Arya, Kevin Broas, Eugene Bak, Mehmet Iyigun, Ricardo Bianchini
   *Publication*: ASPLOS-2022
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper introduces memory-harvesting virtual machines that reclaim unused memory from low-priority VMs and reallocate it to memory-intensive workloads in cloud data centers. The system transparently identifies and harvests idle memory pages without impacting the performance of donor VMs, using a combination of ballooning and page-level memory tracking. Results from production cloud deployments show significant improvements in memory utilization and reduced need for over-provisioning.
   **Code**: Not available
 
 - **[Modeling Analysis and Cost-Performance Ratio Optimization of Virtual Machine Scheduling in Cloud Computing](https://scholar.google.com/scholar?q=Modeling%2BAnalysis%2Band%2BCost-Performance%2BRatio%2BOptimization%2Bof%2BVirtual%2BMachine%2BScheduling%2Bin%2BCloud%2BComputing)**
   *Authors*: Bo Wan, Jiale Dang, Zhetao Li, Hongfang Gong, Feng Zhang, Sangyoon Oh
   *Publication*: TPDS-2020
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper presents a modeling and analysis framework for optimizing the cost-performance ratio of virtual machine scheduling in cloud computing environments. It formulates VM scheduling as an optimization problem that jointly considers execution cost and performance metrics, proposing an analytical model to predict the cost-performance trade-offs of different scheduling decisions. The proposed algorithm achieves better cost-efficiency than baseline approaches while maintaining acceptable performance levels for diverse workloads.
   **Code**: Not available
 
 - **[Optimizing Resource Management for Shared Microservices: A Scalable System Design](https://scholar.google.com/scholar?q=Optimizing+Resource+Management+for+Shared+Microservices:+A+Scalable+System+Design)**
   *Authors*: Shutian Luo, Chenyu Lin, Kejiang Ye, Guoyao Xu, Liping Zhang, Guodong Yang, Huanle Xu, Chengzhong Xu
   *Publication*: TOCS-2023
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper presents a scalable system design for optimizing resource management of shared microservices in cloud infrastructure. The system addresses the challenges of resource contention and interference among co-located microservices by employing fine-grained resource isolation and adaptive allocation policies. Experimental evaluation on production microservice workloads demonstrates significant improvements in both resource utilization and service-level objective compliance.
   **Code**: Not available
 
 - **[SAAS parallel task scheduling based on cloud service flow load algorithm](https://scholar.google.com/scholar?q=SAAS%2Bparallel%2Btask%2Bscheduling%2Bbased%2Bon)**
   *Authors*: Jian Zhu, Qian Li, Shi Ying
   *Publication*: Comp. Com-2022
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper proposes a cloud service flow load algorithm for parallel task scheduling in SaaS environments. The method models task execution as a flow network and applies load-aware scheduling to distribute parallel tasks across cloud resources, aiming to minimize response time and balance resource utilization. Experimental results demonstrate improved scheduling efficiency and reduced task completion times compared to conventional scheduling approaches.
   **Code**: Not available
 
 - **[Scavenger: A Black-Box Batch Workload Resource Manager for Improving Utilization in Cloud Environments](https://scholar.google.com/scholar?q=Scavenger:+A+Black-Box+Batch+Workload+Resource+Manager+for+Improving+Utilization+in+Cloud+Environments)**
   *Authors*: Sara Babaei, Shashank Srivastava, Kshitij Bansal, K. R. Jayaram
   *Publication*: SoCC-2019
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper presents Scavenger, a black-box batch workload resource manager that improves utilization in cloud environments by opportunistically scheduling batch jobs on underutilized resources. Scavenger operates without requiring application-level modifications or performance models, instead using external resource usage signals to dynamically allocate and reclaim resources. Evaluation on production cloud workloads shows that Scavenger significantly increases cluster utilization without degrading the performance of latency-sensitive foreground services.
   **Code**: Not available
 
 - **[Sinan: ML-based and QoS-aware resource management for cloud microservices](https://scholar.google.com/scholar?q=Sinan%3A%2BML-based%2Band%2BQoS-aware%2Bresource%2Bmanagement%2Bfor%2Bcloud%2Bmicroservices)**
   *Authors*: Yanqi Zhang, Weizhe Hua, Zhuangzhuang Zhou, G. Edward Suh, Christina Delimitrou
   *Publication*: ASPLOS-2021
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper presents Sinan, an ML-based resource management system for cloud microservices that is aware of quality-of-service requirements. Sinan uses machine learning models to predict microservice performance under different resource configurations and makes proactive resource allocation decisions to meet QoS targets. The system effectively handles workload variability and resource contention in multi-tenant microservice environments, reducing QoS violations and improving resource efficiency.
   **Code**: Not available
 
 - **[SLA-Based Scheduling of Spark Jobs in Hybrid Cloud Computing Environments](https://doi.org/10.1109/tc.2021.3075625)**
   *Authors*: Muhammed Tawfiqul Islam, Huaming Wu, Shanika Karunasekera, Rajkumar Buyya
   *Publication*: TC-2021
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper addresses the scheduling of Apache Spark jobs in hybrid cloud computing environments with SLA constraints. It develops an SLA-aware scheduling mechanism that dynamically places Spark tasks across private and public cloud resources to minimize cost while meeting deadline requirements. The proposed approach uses cost-performance models to guide placement decisions and achieves significant cost savings compared to single-cloud deployments.
   **Code**: Not available
 
 - **[State Space Model and Queuing Network Based Cloud Resource Provisioning for Meshed Web Systems](https://scholar.google.com/scholar?q=State+Space+Model+and+Queuing+Network+Based+Cloud+Resource+Provisioning+for+Meshed+Web+Systems)**
   *Authors*: Yamin Lei, Zhicheng Cai, Xiaoping Li, Rajkumar Buyya
   *Publication*: TPDS-2022
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper proposes a cloud resource provisioning approach for meshed web systems based on state space models and queuing network theory. The method models the complex interactions among microservices as a queuing network and uses state space analysis to predict system performance under different resource configurations. The resulting provisioning algorithm dynamically allocates resources to meet performance targets while minimizing resource costs in meshed web architectures.
   **Code**: Not available
 
 - **[TERMS: Task management policies to achieve high performance for mixed workloads using surplus resources](https://scholar.google.com/scholar?q=TERMS:+Task+management+policies+to+achieve+high+performance+for+mixed+workloads+using+surplus+resources)**
   *Authors*: Jinyu Yu, Wei Tong, Pengze Lv, Dan Feng
   *Publication*: JPDC-2022
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper presents TERMS, a task management framework that leverages surplus resources in cloud data centers to improve performance for mixed workloads. The system identifies idle or underutilized resources and applies policy-driven task placement to redirect batch and opportunistic workloads to these surplus resources. Experiments demonstrate that TERMS achieves significant performance improvements for mixed workloads without impacting the quality of service for primary applications.
   **Code**: Not available
 
 - **[ThermoSim: Deep learning based framework for modeling and simulation of thermal-aware resource management for cloud computing environments](https://scholar.google.com/scholar?q=ThermoSim:+Deep+learning+based+framework+for+modeling+and+simulation+of+thermal-aware+resource+management+for+cloud+computing+environments)**
   *Authors*: Sukhpal Singh Gill, Shreshth Tuli, Adel Nadjaran Toosi, Felix Cuadrado, Peter Garraghan, Rami Bahsoon, Hanan Lutfiyya, Rizos Sakellariou, Omer Rana, Schahram Dustdar
   *Publication*: JSS-2020
-  *Summary*: This paper presents a traditional (non-RL) approach for cloud resource management and scheduling. The method uses mathematical modeling, analytical techniques, or heuristic algorithms to optimize resource allocation and task placement.
+  *Summary*: This paper presents ThermoSim, a deep learning-based framework for modeling and simulating thermal-aware resource management in cloud computing environments. The framework uses deep neural networks to predict thermal behavior of data center servers based on workload patterns and cooling conditions, enabling resource allocation decisions that minimize thermal hotspots and cooling energy. Simulation results demonstrate that ThermoSim effectively reduces peak temperatures and cooling costs compared to traditional thermal-unaware approaches.
   **Code**: Not available
 
 ---
