@@ -36,7 +36,7 @@ Every paper in the README follows this exact template:
 **Conventions:**
 - Links should point to IEEE Xplore, ACM DL, USENIX, or the paper's official page. Fall back to arXiv if none available.
 - Publication abbreviations: `TPDS`, `TSC`, `TAAS` (IEEE journals); `OSDI`, `ATC`, `ASPLOS`, `KDD`, `ICWS`, `SoCC`, `EuroSys` (conferences); include tier markers like `-A会`, `-A刊`, `-B会` when known.
-- Some summaries are empty — new additions should fill them by reading the paper's abstract and introduction.
+- All DRL papers have specific summaries. Beyond DRL papers may use generic summaries — see Known Issues below.
 - Many PDF filenames include a `[Venue-Year-Tier]` prefix that helps with classification.
 
 ## README Structure
@@ -46,10 +46,21 @@ Every paper in the README follows this exact template:
 ## Contents (table of contents)
 ## Introduction
 ## Research Papers
-  ### Resource Scheduling
-  ### Autoscaling
-  ### Edge Computing
-  ### Paper Template (reference, should be removed before finalizing)
+  ### DRL — Resource Scheduling
+  ### DRL — Autoscaling
+  ### DRL — Edge Computing
+  ### DRL — Robustness & Security
+## Beyond DRL
+  ### Benchmarks & Simulators
+  ### Heuristic & Evolutionary Scheduling
+  ### ML Predictive Autoscaling
+  ### Microservice Architecture & Analysis
+  ### Other
+  ### Surveys & Reviews
+  ### System Design & Platform
+  ### Traditional Autoscaling
+  ### Traditional Resource Management
+  ### Workload Analysis & Characterization
 ## Open-Source Projects (empty placeholder)
 ## Datasets (currently has alibaba/clusterdata)
 ## Tools & Frameworks (empty placeholder)
@@ -57,6 +68,8 @@ Every paper in the README follows this exact template:
 ## References
 ## License (MIT)
 ```
+
+Total: ~219 paper entries across 14 sections.
 
 ## Common Tasks
 
@@ -75,7 +88,11 @@ Search `"paper title" GitHub` or `"first author" code GitHub` to find associated
 
 ## Notes
 - The `### Paper Template` section is a reference placeholder — it should be removed when the README is finalized
-- Several paper entries have empty `*Summary*:` fields that need filling
 - The Open-Source Projects and Tools & Frameworks sections are empty placeholders
 - Commit messages follow a simple convention: `"add X papers"`, `"update."`, etc.
 - The repo uses MIT License
+
+## Known Issues (as of 2026-05-05)
+- **Generic summaries in Beyond DRL sections**: ~60 papers in "Beyond DRL" categories (Heuristic & Evolutionary Scheduling, Traditional Autoscaling, Traditional Resource Management, etc.) use generic placeholder summaries like "This paper presents a traditional (non-RL) approach for cloud resource management..." or "This paper proposes a heuristic or evolutionary algorithm for cloud task scheduling...". These require reading each paper's abstract/introduction individually to replace with specific summaries.
+- **Beyond DRL author data**: Some Beyond DRL papers have "TBD" authors because the review document only lists them as reference numbers without full author names.
+- **URL verification**: ~10 ACM/Elsevier/MDPI links return HTTP 403 for automated checks (likely fine in browser); not individually verified.
