@@ -48,6 +48,12 @@ This repository collects significant works that leverage DRL for cloud schedulin
 
 ### DRL — Resource Scheduling
 
+- **[Batch Jobs Load Balancing Scheduling in Cloud Computing Using Distributional Reinforcement Learning](https://doi.org/10.1109/tpds.2023.3334519)**
+  *Authors*: Tiangang Li, Shi Ying, Yishi Zhao, Jianga Shang
+  *Publication*: TPDS-2024
+  *Summary*: This paper addresses load balancing scheduling for batch jobs in cloud computing using distributional reinforcement learning. Unlike value-based DQN methods that only estimate expected cumulative return, this approach models the full value distribution to capture environmental stochasticity. By formalizing load balancing as a multi-objective optimization problem and applying quantile regression to learn the value distribution, the proposed algorithm achieves superior load balancing and resource utilization compared to baselines on real Alibaba Cluster traces (v2018 and v2020).
+  **Code**: Not available
+
 - **[<i>Microscaler</i>: Cost-Effective Scaling for Microservice Applications in the Cloud With an Online Learning Approach](https://scholar.google.com/scholar?q=iMicroscaleri%3A%2BCost-Effective%2BScaling%2Bfor%2BMicroservice%2BApplications%2Bin%2Bthe%2BCloud%2BWith%2Ban%2BOnline%2BLearning%2BApproach)**
   *Authors*: Guangba Yu, Pengfei Chen, Zibin Zheng
   *Publication*: TCC-2022
@@ -331,6 +337,12 @@ This repository collects significant works that leverage DRL for cloud schedulin
   **Code**: Not available
 
 ---
+
+- **[ASTRA: Adversarial Sim-to-Real Transfer Reinforcement Learning for Autoscaling in Cloud Systems](https://doi.org/10.1109/tse.2025.3603995)**
+  *Authors*: Tiangang Li, Shi Ying, Xiangbo Tian, Ting Zhang, Yong Wang
+  *Publication*: TSE-2025
+  *Summary*: This paper proposes ASTRA, a sim-to-real transfer reinforcement learning framework for cloud autoscaling that addresses the high interaction costs and data inefficiency of training DRL autoscalers on real systems. ASTRA constructs a simulation environment based on a hybrid attentive state space model that captures system dynamics and state evolution, enabling low-cost policy training. An adversarial soft actor-critic method with gradient regularization is then used to mitigate policy performance degradation from distribution shift when transferring to real cloud systems.
+  **Code**: Not available
 
 - **[A Meta Reinforcement Learning Approach for Predictive Autoscaling in the Cloud](https://scholar.google.com/scholar?q=A+Meta+Reinforcement+Learning+Approach+for+Predictive+Autoscaling+in+the+Cloud)**
   *Authors*: Siqiao Xue, Chao Qu, Xiaoming Shi, Cong Liao, Shiyi Zhu, Xiaoyu Tan, Lintao Ma, Shiyu Wang, Shijun Wang, Yun Hu
