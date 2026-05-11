@@ -57,271 +57,271 @@ This repository collects significant works that leverage DRL for cloud schedulin
 - **[<i>Microscaler</i>: Cost-Effective Scaling for Microservice Applications in the Cloud With an Online Learning Approach](https://scholar.google.com/scholar?q=iMicroscaleri%3A%2BCost-Effective%2BScaling%2Bfor%2BMicroservice%2BApplications%2Bin%2Bthe%2BCloud%2BWith%2Ban%2BOnline%2BLearning%2BApproach)**
   *Authors*: Guangba Yu, Pengfei Chen, Zibin Zheng
   *Publication*: TCC-2022
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: This paper addresses the challenge of autoscaling microservice applications, where complex service dependencies make it difficult to identify which services need scaling during workload spikes. Microscaler collects QoS metrics from the service mesh, identifies scaling-needed services using a novel "service power" criterion along the dependency graph, and combines Bayesian optimization-based online learning with step-by-step heuristics to reach optimal scaling. Evaluations on a microservice benchmark show 93% precision in identifying scaling-needed services and faster convergence to optimal service scale than state-of-the-art methods.
   **Code**: Not available
 
-- **[A Dual-Agent Scheduler for Distributed Deep Learning Jobs on Public Cloud via Reinforcement Learning](https://scholar.google.com/scholar?q=A+Dual-Agent+Scheduler+for+Distributed+Deep+Learning+Jobs+on+Public+Cloud+via+Reinforcement+Learning)**
+- **[A Dual-Agent Scheduler for Distributed Deep Learning Jobs on Public Cloud via Reinforcement Learning]
   *Authors*: Mingzhe Xing, Hangyu Mao, Shenglin Yin, Lichen Pan, Zhengchao Zhang, Zhen Xiao, Jieyi Long
   *Publication*: KDD-2023
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: This paper tackles distributed deep learning job scheduling on public cloud GPU clusters, where existing methods typically optimize job ordering or placement independently without considering their cooperation. A dual-agent reinforcement learning framework is proposed: an ordering agent uses a scalable squeeze-and-communicate strategy for coordinated job sequencing, while a placement agent employs a Random Walk Gaussian Process to model GPU machine performance similarities and account for resource contention. Experiments show the dual-agent scheduler reduces training fees and job completion time compared to baselines.
   **Code**: Not available
 
-- **[A heuristic multi-objective task scheduling framework for container-based clouds via actor-critic reinforcement learning](https://scholar.google.com/scholar?q=A+heuristic+multi-objective+task+scheduling+framework+for+container-based+clouds+via+actor-critic+reinforcement+learning)**
+- **[A heuristic multi-objective task scheduling framework for container-based clouds via actor-critic reinforcement learning]
   *Authors*: Lilu Zhu, Feng Wu, Yanfeng Hu, Kai Huang, Xinmei Tian
   *Publication*: 2023
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: This paper proposes AC-CCTS, a heuristic multi-objective task scheduling framework for container-based clouds that balances business performance (QoS) and resource utilization efficiency during peak application access periods. Built on the actor-critic algorithm, it incorporates heuristic rules and prioritized experience replay to accelerate convergence, a compensation mechanism for robustness, and a dynamic scheduling model for container cloud environments. Compared with meta-heuristic methods (FIMPSO, HWOA-MBA) and other RL algorithms (DeepRM-Plus, RLSched), AC-CCTS demonstrates better resource utilization efficiency and convergence stability.
   **Code**: Not available
 
-- **[A Hierarchical Framework of Cloud Resource Allocation and Power Management Using Deep Reinforcement Learning](https://doi.org/10.1109/icdcs.2017.123)**
+- **[A Hierarchical Framework of Cloud Resource Allocation and Power Management Using Deep Reinforcement Learning]
   *Authors*: Ning Liu, Zhe Li, Jielong Xu, Zhiyuan Xu, Sheng Lin, Qinru Qiu, Jian Tang, Yanzhi Wang
   *Publication*: ICDCS-2017
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: This paper proposes a hierarchical framework for jointly optimizing VM resource allocation and dynamic power management in cloud computing systems. The global tier uses deep reinforcement learning with an autoencoder and weight sharing structure to handle high-dimensional state spaces for VM-to-server allocation, while the local tier combines LSTM-based workload prediction with model-free RL for distributed server power management. Evaluated on Google cluster traces, the framework significantly reduces power consumption and energy usage compared to baselines without severe latency degradation.
   **Code**: Not available
 
-- **[A multi-objective trade-off framework for cloud resource scheduling based on the Deep Q-network algorithm](https://scholar.google.com/scholar?q=A+multi-objective+trade-off+framework+for+cloud+resource+scheduling+based+on+the+Deep+Q-network+algorithm)**
+- **[A multi-objective trade-off framework for cloud resource scheduling based on the Deep Q-network algorithm]
   *Authors*: Zhiping Peng, Jianpeng Lin, Delong Cui, Qirui Li, Jieguang He
   *Publication*: Cluster Computing-2022
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: This paper addresses the conflict between cloud service providers minimizing energy costs and users seeking optimized service quality through an online DQN-based resource scheduling framework. The framework enables dynamic trade-offs between energy consumption and task makespan by adjusting the proportion of rewards assigned to each optimization objective. Experiments demonstrate the framework effectively balances these competing objectives and achieves clear improvements over baseline algorithms.
   **Code**: Not available
 
-- **[Actor-Critic with Transformer for Cloud Computing Resource Three Stage Job Scheduling](https://doi.org/10.1109/icccbda55098.2022.9778883)**
+- **[Actor-Critic with Transformer for Cloud Computing Resource Three Stage Job Scheduling]
   *Authors*: Yanbo Xu, Jiakun Zhao
   *Publication*: ICCCBDA-2022
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: This paper presents ACT4JS, an actor-critic with transformer algorithm for three-stage job scheduling that manages data centers, server nodes, and application containers. The algorithm uses transformer network structures and proximal policy optimization (PPO) for feature learning and loss optimization, handling both single-task multi-instance jobs and DAG jobs with dependencies. Experiments show ACT4JS achieves lower energy consumption costs and task reject rates than mainstream baselines under online training.
   **Code**: Not available
 
-- **[Adaptive and Efficient Resource Allocation in Cloud Datacenters Using Actor-Critic Deep Reinforcement Learning](https://doi.org/10.1109/tpds.2021.3132422)**
+- **[Adaptive and Efficient Resource Allocation in Cloud Datacenters Using Actor-Critic Deep Reinforcement Learning]
   *Authors*: Zheyi Chen, Jia Hu, Geyong Min, Chunbo Luo, Tarek El-Ghazawi
   *Publication*: TPDS-2022
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: This paper proposes an actor-critic deep reinforcement learning scheme for adaptive cloud datacenter resource allocation that does not require prior knowledge of the system. The actor parameterizes the scheduling policy while the critic evaluates actions, with policy updates using gradient ascent and variance reduction via an advantage function to improve training efficiency. Evaluated on Google cloud datacenter traces, the method achieves superior latency, lower job dismissal rate, and enhanced energy efficiency compared to two advanced DRL-based and five classic resource allocation methods.
   **Code**: Not available
 
-- **[ADRL: A Hybrid Anomaly-Aware Deep Reinforcement Learning-Based Resource Scaling in Clouds](https://doi.org/10.1109/tpds.2020.3025914)**
+- **[ADRL: A Hybrid Anomaly-Aware Deep Reinforcement Learning-Based Resource Scaling in Clouds]
   *Authors*: Sara Kardani-Moghaddam, Rajkumar Buyya, Kotagiri Ramamohanarao
   *Publication*: TPDS-2021
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: This paper proposes ADRL, a hybrid anomaly-aware deep reinforcement learning approach for dynamic vertical resource scaling in clouds. ADRL integrates anomaly detection techniques to trigger scaling actions in response to identified anomalous states, employing two levels of global and local decision-makers to handle required scaling actions. Experiments across different anomaly scenarios show ADRL significantly improves QoS with fewer scaling actions and increased system stability compared to threshold-based and time series methods.
   **Code**: Not available
 
-- **[Cloud Resource Scheduling With Deep Reinforcement Learning and Imitation Learning](https://doi.org/10.1109/jiot.2020.3025015)**
+- **[Cloud Resource Scheduling With Deep Reinforcement Learning and Imitation Learning]
   *Authors*: Wenxia Guo, Wenhong Tian, Yufei Ye, Lingxiao Xu, Kui Wu
   *Publication*: IOTJ-2021
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: This paper presents DeepRM_Plus, a deep RL-based solution using a convolutional neural network to model cloud resource management and imitation learning to accelerate policy training. By combining imitation learning into the reinforcement process, DeepRM_Plus converges 37.5% faster than the state-of-the-art DeepRM algorithm. It also reduces the average weighted turnaround time by 51.85% and average cycling time by 11.51%.
   **Code**: Not available
 
-- **[Cost-aware job scheduling for cloud instances using deep reinforcement learning](https://scholar.google.com/scholar?q=Cost-aware+job+scheduling+for+cloud+instances+using+deep+reinforcement+learning)**
+- **[Cost-aware job scheduling for cloud instances using deep reinforcement learning]
   *Authors*: Feng Cheng, Yifeng Huang, Bhavana Tanpure, Pawan Sawalani, Long Cheng, Cong Liu
   *Publication*: Cluster Computing-2022
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: This paper addresses real-time job scheduling for dynamic cloud workloads where user requests arrive continuously, unlike most existing approaches designed for batch jobs. A DQN-based scheduler is developed that optimizes both QoS for end-users and cost reduction on virtual machine instances. Experimental results demonstrate the DQN scheduler significantly outperforms commonly used real-time scheduling algorithms in both QoS and cost metrics.
   **Code**: Not available
 
-- **[Data Centers Job Scheduling with Deep Reinforcement Learning](https://doi.org/10.1007/978-3-030-47436-2_68)**
+- **[Data Centers Job Scheduling with Deep Reinforcement Learning]
   *Authors*: Sisheng Liang, Zhou Yang, Fang Jin, Yong Chen
   *Publication*: PAKDD-2020
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: This paper proposes A2cScheduler, an Advantage Actor-Critic (A2C) deep reinforcement learning approach for job scheduling in data centers with heterogeneous resources. A2cScheduler employs two agents -- an actor that learns the scheduling policy and a critic that reduces estimation error -- designed to minimize gradient estimation variance and update parameters more efficiently than previous policy gradient methods. The approach achieves competitive scheduling performance on both simulated workloads and real data collected from an academic data center.
   **Code**: Not available
 
-- **[DDQN-TS: A novel bi-objective intelligent scheduling algorithm in the cloud environment](https://scholar.google.com/scholar?q=DDQN-TS:+A+novel+bi-objective+intelligent+scheduling+algorithm+in+the+cloud+environment)**
+- **[DDQN-TS: A novel bi-objective intelligent scheduling algorithm in the cloud environment]
   *Authors*: Zhao Tong, Feng Ye, Bilan Liu, Jinhui Cai, Jing Mei
   *Publication*: Neurocomputing-2021
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: This paper addresses dynamic online task scheduling in cloud environments where limited resources must serve high-QoS requests. The proposed DDQN-TS algorithm uses the adaptive learning capability of Double Deep Q-Network (DDQN) to explore optimal scheduling strategies, mitigating the overestimation bias of standard DQN. Experiments on Random, Google, and Alibaba benchmarks show DDQN-TS guarantees a high task completion rate and effectively reduces average task response time compared to classic scheduling algorithms.
   **Code**: Not available
 
-- **[Deep Reinforcement Learning based Compute-Intensive Workload Allocation in Data Centers with High Energy Efficiency](https://doi.org/10.1109/iccc52777.2021.9580316)**
+- **[Deep Reinforcement Learning based Compute-Intensive Workload Allocation in Data Centers with High Energy Efficiency]
   *Authors*: Zhenfeng Gao, Wei Liu, Long Suo, Jiandong Li, Yijun Lu
   *Publication*: ICCC-2021
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: This paper proposes AC-CIWAS, an Actor-Critic deep reinforcement learning scheme for allocating compute-intensive workloads to physical servers in data centers to reduce energy consumption while guaranteeing QoS. The method continuously captures dynamic server states and uses a DRL-based Actor-Critic algorithm to evaluate cumulative returns that guide energy-efficient workload allocation. Simulations show AC-CIWAS reduces server power consumption by approximately 20 percent compared to baseline methods while maintaining QoS.
   **Code**: Not available
 
 - **[Deep Reinforcement Learning Enhanced Greedy Algorithm for Online Scheduling of Batched Tasks in Cloud in Cloud HPC Systems](https://scholar.google.com/scholar?q=Deep%2BReinforcement%2BLearning%2BEnhanced%2BGreedy%2BAlgorithm%2Bfor%2BOnline%2BScheduling%2Bof%2BBatched%2BTasks%2Bin%2BCloud%2Bin%2BCloud%2BHPC%2BSystems)**
   *Authors*: Yuanhao Yang, Hong Shen
   *Publication*: TPDS-2022
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: This paper addresses online scheduling of batched tasks arriving in cloud HPC systems by proposing a two-stage DRL-enhanced greedy algorithm that jointly optimizes task sequencing and allocation. A DRL module predicts the optimal allocation sequence for each batch based on prior learning, while a greedy strategy allocates tasks to heterogeneous servers with a proven competitive ratio bound of 1/(1+k). Experiments in both simulation and real environments show the algorithm increases system net gain by 10% to 30% over state-of-the-art baselines.
   **Code**: Not available
 
 - **[Deep Reinforcement Learning for Dynamic Workflow Scheduling in Cloud Environment](https://doi.org/10.1109/scc53864.2021.00023)**
   *Authors*: Tingting Dong, Fei Xue, Changbai Xiao, Jiangjiang Zhang
   *Publication*: SCC-2021
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: This paper studies dynamic workflow scheduling in cloud environments while accounting for the performance variation of cloud resources, which most existing algorithms ignore. The proposed RLWS approach formulates the makespan-minimization problem as a Markov Decision Process and uses an Actor-Critic deep reinforcement learning method that learns neural network parameters through iterative local re-scheduling. Experiments confirm the algorithm efficiently shortens workflow makespan compared to conventional approaches.
   **Code**: Not available
 
 - **[Deep Reinforcement Learning for Multi-resource Cloud Job Scheduling](https://scholar.google.com/scholar?q=Deep%2BReinforcement%2BLearning%2Bfor%2BMulti-resource%2BCloud)**
   *Authors*: Jianpeng Lin, Zhiping Peng, Delong Cui
   *Publication*: ICNP-2017
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: This paper extends the DeepRM approach to multi-resource multi-machine job scheduling across multiple server clusters, representing resource occupancy status as images for deep reinforcement learning processing. The authors present several improvements to the original model and demonstrate that DRL-based methods can outperform traditional heuristic resource allocation algorithms in complex multi-resource environments.
   **Code**: Not available
 
 - **[Deep reinforcement learning-aided multi-step job scheduling in optical data center networks](https://scholar.google.com/scholar?q=Deep%2Breinforcement%2Blearning-aided%2Bmulti-step%2Bjob%2Bscheduling)**
   *Authors*: Che-Yu Liu, Xiaoliang Chen, Roberto Proietti, Zuqing Zhu, S. J. Ben Yoo
   *Publication*: ICDBC-2025
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: This paper addresses joint job scheduling and topology reconfiguration in optical data center networks (ODCNs) to handle intensive communication demands from distributed ML workloads. A DRL-based multi-step scheduling algorithm decomposes each job into an ordered VM sequence and learns sequential placement decisions using a dual reward scheme combining team incentives for end-to-end job provisioning and individual rewards for advantageous local placements. Simulations show the approach reduces job-blocking probability and reconfiguration frequency by at least 7.35% and 4.59% respectively over heuristic baselines.
   **Code**: Not available
 
 - **[Deep reinforcement learning-based methods for resource scheduling in cloud computing: a review and future directions](https://arxiv.org/abs/2103.16428)**
   *Authors*: Guangyao Zhou, Wenhong Tian, Rajkumar Buyya, Ruini Xue, Liang Song
   *Publication*: arXiv-2021
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: This survey provides a comprehensive review of deep reinforcement learning methods applied to resource scheduling in cloud computing. The authors analyze the theoretical formulation of scheduling problems and RL frameworks, discuss the advantages of DRL-based methods over classical heuristics and meta-heuristics in complex cloud scenarios, and identify key challenges and future research directions for DRL in cloud scheduling.
   **Code**: Not available
 
 - **[DeepEE: Joint Optimization of Job Scheduling and Cooling Control for Data Center Energy Efficiency Using Deep Reinforcement Learning](https://scholar.google.com/scholar?q=DeepEE:+Joint+Optimization+of+Job+Scheduling+and+Cooling+Control+for+Data+Center+Energy+Efficiency+Using+Deep+Reinforcement+Learning)**
   *Authors*: Yongyi Ran, Han Hu, Xin Zhou, Yonggang Wen
   *Publication*: ICDCS-2019
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: This paper proposes DeepEE, a DRL-based framework that jointly optimizes IT job scheduling and cooling control to improve data center energy efficiency. The authors design a Parameterized Action space Deep Q-Network (PADQN) algorithm with a two-time-scale control mechanism to handle the hybrid action space of scheduling decisions and airflow rate adjustments. Using real-trace simulations, DeepEE achieves up to 15% and 10% energy savings over baseline siloed and joint optimization approaches respectively, with more stable performance and a better energy-QoS tradeoff.
   **Code**: Not available
 
 - **[DRAS: Deep Reinforcement Learning for Cluster Scheduling in High Performance Computing](https://scholar.google.com/scholar?q=DRAS:+Deep+Reinforcement+Learning+for+Cluster+Scheduling+in+High+Performance+Computing)**
   *Authors*: Yuping Fan, Boyang Li, Dustin Favorite, Naunidh Singh, Taylor Childers, Paul Rich, William Allcock, Michael E. Papka, Zhiling Lan
   *Publication*: TPDS-2022
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: This paper presents DRAS, an automated HPC cluster scheduling agent built on a hierarchical neural network that incorporates domain-specific features such as resource reservation and backfilling. Given a scheduling objective from the system manager, DRAS learns and dynamically adjusts its policy through interaction with the environment. Implemented in the CQGym evaluation platform and tested with production workloads, DRAS outperforms existing heuristic and optimization approaches by up to 50%.
   **Code**: Not available
 
 - **[DRL-cloud: Deep reinforcement learning-based resource provisioning and task scheduling for cloud service providers](https://doi.org/10.1109/aspdac.2018.8297294)**
   *Authors*: Mingxi Cheng, Ji Li, Shahin Nazarian
   *Publication*: ASP-DAC-2018
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: This paper presents DRL-Cloud, a deep Q-learning-based system that jointly optimizes resource provisioning and task scheduling (including task dependencies) for large-scale cloud service providers to minimize energy cost. The two-stage RP-TS processor learns from changing user request patterns and real-time electricity pricing using experience replay and target network techniques. Evaluations on a 5,000-server setup with 200,000 tasks show up to 320% energy cost efficiency improvement and 144% runtime reduction compared to baselines.
   **Code**: Not available
 
 - **[Dynamic Job Shop Scheduling via Deep Reinforcement Learning](https://scholar.google.com/scholar?q=Dynamic+Job+Shop+Scheduling+via+Deep+Reinforcement+Learning)**
   *Authors*: Xinjie Liang, Wen Song, Pengfei Wei
   *Publication*: NeurIPS-2020
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: This paper addresses the dynamic job-shop scheduling problem (DJSP) under uncertainty by proposing a DRL-based method that directly selects legitimate jobs as actions, breaking free from the limitations of fixed dispatching rule sets. Two training methods are designed: a gradient-based algorithm with dense rewards and an evolutionary strategy with sparse rewards. Experiments show the DRL method learns high-quality dispatching policies that significantly outperform a state-of-the-art Genetic Programming-based dispatching rule learning approach.
   **Code**: Not available
 
 - **[Efficient Compute-Intensive Job Allocation in Data Centers via Deep Reinforcement Learning](https://doi.org/10.1109/tpds.2020.2968427)**
   *Authors*: Deliang Yi, Xin Zhou, Yonggang Wen, Rui Tan
   *Publication*: TPDS-2020
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: This paper applies deep reinforcement learning to allocate long-lasting compute-intensive jobs in data centers, training a deep Q-network offline using an LSTM-based computational model that captures server power and thermal dynamics. This offline training avoids the slow convergence, low energy efficiency, and potential overheating risks of direct online interaction. Evaluation with eight months of data from a 1,152-processor national supercomputing data center shows the solution reduces computing power consumption by over 10% and processor temperature by more than 4C without sacrificing throughput.
   **Code**: Not available
 
 - **[Energy-Efficient Task Scheduling in Data Centers Using Adaptive Deep Reinforcement Learning](https://scholar.google.com/scholar?q=Energy-Efficient%2BTask%2BScheduling%2Bin%2BData%2BCenters)**
   *Authors*: Dinuț Ionuț-Cosmin, Bogdan Alexandrescu, Rodica-Claudia Constantinescu
   *Publication*: Code-2025
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: This paper uses a Deep Reinforcement Learning agent trained with Proximal Policy Optimization (PPO) to dynamically schedule incoming tasks across multiple servers in data centers, aiming to balance energy minimization with low service latency. Simulations with fluctuating workloads show the RL agent outperforms standard heuristics such as Round-Robin and Least-Loaded, achieving a superior tradeoff between power consumption reduction and SLA violation minimization. The results demonstrate that adaptive RL-based policies are effective for intelligent data center resource management.
   **Code**: Not available
 
 - **[GARLSched: Generative adversarial deep reinforcement learning task scheduling optimization for large-scale high performance computing systems](https://scholar.google.com/scholar?q=GARLSched:+Generative+adversarial+deep+reinforcement+learning+task+scheduling+optimization+for+large-scale+high+performance+computing+systems)**
   *Authors*: Jingbo Li, Xingjun Zhang, Jia Wei, Zeyu Ji, Zheng Wei
   *Publication*: FGCS-2022
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: Addresses the challenge of DRL training convergence in large-scale HPC task scheduling caused by task exogeneity and reward sparsity. GARLSched combines generative adversarial reinforcement learning with expert policy guidance, using a task embedding-based discriminator network to stabilize the learning process. Experiments show it learns high-quality scheduling policies for various workloads and optimization objectives, maintaining stable performance even on unseen workloads.
   **Code**: Not available
 
 - **[gym-hpa: Efficient Auto-Scaling via Reinforcement Learning for Complex Microservice-based Applications in Kubernetes](https://doi.org/10.1109/noms56928.2023.10154298)**
   *Authors*: José Santos, Tim Wauters, Bruno Volckaert, Filip De Turck
   *Publication*: NOMS-2023
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: Proposes gym-hpa, an OpenAI Gym-based reinforcement learning framework for Kubernetes auto-scaling that explicitly accounts for microservice inter-dependencies in horizontal scaling decisions. RL agents trained with this framework reduce resource usage by approximately 30% and application response time by about 25% compared to default Kubernetes scaling mechanisms.
   **Code**: Not available
 
 - **[Heterogeneous-Aware Online Cloud Task Scheduler Based on Clustering and Deep Reinforcement Learning Ensemble](https://doi.org/10.1007/978-3-030-70665-4_18)**
   *Authors*: Dan Gu, Jing Chen, Xiaoyu Shi, Longyu Ran, Ying Zhang, Mingsheng Shang
   *Publication*: ICNC-FSKD-2020
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: Proposes an intelligent cloud task scheduler that combines k-means clustering to identify workload types with a Deep Deterministic Policy Gradient (DDPG) algorithm for optimized task dispatch across heterogeneous virtual machines. Evaluated on Alibaba's real workload traces, the scheduler outperforms existing methods in both response time and resource utilization.
   **Code**: Not available
 
 - **[Integrated and Fungible Scheduling of Deep Learning Workloads Using Multi-Agent Reinforcement Learning](https://doi.org/10.1109/tpds.2024.3522333)**
   *Authors*: Jialun Li, Danyang Xiao, Diying Yang, Xuan Mo, Weigang Wu
   *Publication*: 2025
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: Presents MAIFS, a multi-agent reinforcement learning algorithm that integrates task placement and resource allocation for deep learning workloads on shared GPU clusters, allowing fungible resource allocation based on workload resource sensitivity. The approach uses a multi-agent attention mechanism to share resource state features across agents and a dynamic coordination graph to mitigate task placement conflicts. Experiments on production DL workload traces and a Kubernetes-based GPU cluster show improvements of up to 44% in makespan and 46% in job completion time over state-of-the-art schedulers.
   **Code**: Not available
 
 - **[Minerva: A reinforcement learning-based technique for optimal scheduling and bottleneck detection in distributed factory operations](https://doi.org/10.1109/comsnets.2018.8328189)**
   *Authors*: Tara Elizabeth Thomas, Jinkyu Koo, Somali Chaterji, Saurabh Bagchi
   *Publication*: ICCSN-2018
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: Addresses the job shop scheduling problem with periodic job arrivals by combining model-free reinforcement learning for optimal resource scheduling with a neural network classifier for bottleneck detection. MINERVA achieves 95.2% accuracy in identifying system bottlenecks, nearly 25% better than best-in-class bottleneck identification methods.
   **Code**: Not available
 
 - **[Model-free control for distributed stream data processing using deep reinforcement learning](https://doi.org/10.14778/3184470.3184474)**
   *Authors*: Teng Li, Zhiyuan Xu, Jian Tang, Yanzhi Wang
   *Publication*: VLDB-2018
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: Proposes the first DRL-based control framework for distributed stream data processing systems, jointly learning the system environment from limited runtime statistics and making scheduling decisions guided by deep neural networks to minimize average end-to-end tuple processing time. Implemented on Apache Storm, the framework reduces tuple processing time by 33.5% over Storm's default scheduler and 14.0% over the state-of-the-art model-based method.
   **Code**: Not available
 
 - **[Multi-Dimensional Resource Allocation in Distributed Data Centers Using Deep Reinforcement Learning](https://scholar.google.com/scholar?q=Multi-Dimensional%2BResource%2BAllocation%2Bin%2BDistributed%2BData%2BCenters%2BUsing%2BDeep%2BReinforcement%2BLearning)**
   *Authors*: Wenting Wei, Huaxi Gu, Kun Wang, Jianjia Li, Xuan Zhang, Ning Wang
   *Publication*: TNSM-2022
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: Presents NESRL-MRM, a natural evolution strategy-based reinforcement learning approach for multi-dimensional resource allocation across distributed data centers that achieves balanced utilization of heterogeneous ICT resources under dynamic and uncertain environments. Evaluated using real-world workload traces from Amazon EC2 and Google datacenters, the approach significantly improves multi-dimensional resource balance and reduces blocking probability for incoming workload demands.
   **Code**: Not available
 
 - **[Optimizing Job Scheduling using Deep Reinforcement Learning](https://dl.acm.org/doi/10.1145/3502181.3531474)**
   *Authors*: Rohit Sigar, Avadh Kishor, Pramod Kumar Singh, Joydip Dhar
   *Publication*: HPDC-2022
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: Proposes a Deep Q-Network (DQN) model for job scheduling that aims to minimize makespan while maximizing resource utilization. Evaluated against four existing scheduling models across two different datasets, the DQN-based approach demonstrates superior or comparable performance in both metrics.
   **Code**: Not available
 
 - **[Performance and Cost-Efficient Spark Job Scheduling Based on Deep Reinforcement Learning in Cloud Computing Environments](https://doi.org/10.1109/tpds.2021.3124670)**
   *Authors*: Muhammed Tawfiqul Islam, Shanika Karunasekera, Rajkumar Buyya
   *Publication*: TPDS-2021
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: Formulates the job scheduling problem for cloud-deployed Spark clusters with multiple SLA objectives including cost reduction and job performance improvement, and implements two DRL-based schedulers using the TF-Agents framework. The agents learn inherent characteristics of different job types to find proper placements, reducing both total cluster VM usage cost and average job duration, with VM usage cost reduced by up to 30%.
   **Code**: Not available
 
 - **[READYS: A Reinforcement Learning Based Strategy for Heterogeneous Dynamic Scheduling](https://doi.org/10.1109/cluster48925.2021.00031)**
   *Authors*: Nathan Grinsztajn, Olivier Beaumont, Emmanuel Jeannot, Philippe Preux
   *Publication*: CLUSTER-2021
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: Proposes READYS, which combines Graph Convolutional Networks (GCN) with an A2C actor-critic algorithm for dynamic DAG scheduling on heterogeneous CPU/GPU platforms. The approach learns a general scheduling strategy that is not limited to a specific task graph or problem size and can schedule any DAG. Simulations show the agent performs comparably or superior to existing algorithms, particularly excelling under scheduling uncertainty.
   **Code**: Not available
 
 - **[Resource Management with Deep Reinforcement Learning](https://scholar.google.com/scholar?q=Resource+Management+with+Deep+Reinforcement+Learning)**
   *Authors*: Hongzi Mao, Mohammad Alizadeh, Ishai Menache, Srikanth Kandula
   *Publication*: HotNets-2016
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: Introduces DeepRM, one of the first works applying DRL to cluster resource management, translating the multi-resource task packing problem into a learning-based approach. DeepRM performs comparably to state-of-the-art heuristics while adapting to varying conditions, converging quickly, and learning intuitively sensible scheduling strategies.
   **Code**: Not available
 
 - **[RLQ: Workload Allocation With Reinforcement Learning in Distributed Queues](https://doi.org/10.1109/tpds.2022.3231981)**
   *Authors*: Alessandro Staffolani, Victor-Alexandru Darvariu, Paolo Bellavista, Mirco Musolesi
   *Publication*: TPDS-2023
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: Addresses task allocation in distributed queue systems where task-specific information (resource demands, expected execution time) is unavailable and worker nodes have heterogeneous capabilities. RLQ, implemented with the Celery queuing system, reduces execution cost by ~70%, execution time by 3x, and waiting time by 7x on synthetic workloads, and also outperforms a Google Borg-inspired E-PVM strategy in five out of six scenarios.
   **Code**: Not available
 
 - **[RLScheduler: An Automated HPC Batch Job Scheduler Using Reinforcement Learning](https://scholar.google.com/scholar?q=RLScheduler:+An+Automated+HPC+Batch+Job+Scheduler+Using+Reinforcement+Learning)**
   *Authors*: Di Zhang, Dong Dai, Youbiao He, Forrest Sheng Bao, Bing Xie
   *Publication*: SC-2020
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: Presents an automated HPC batch job scheduler using reinforcement learning that requires minimal manual intervention or expert knowledge, relying instead on continuous trial-and-error to learn high-quality scheduling policies. Introduces a kernel-based neural network structure and trajectory filtering mechanism to stabilize learning, with experiments confirming stable performance even on unseen workloads.
   **Code**: Not available
 
 - **[RLSK: A Job Scheduler for Federated Kubernetes Clusters based on Reinforcement Learning](https://doi.org/10.1109/ic2e48712.2020.00019)**
   *Authors*: Jiaming Huang, Chuming Xiao, Weigang Wu
   *Publication*: IC2E-2020
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: Presents RLSK, a DRL-based job scheduler for federated Kubernetes clusters that adaptively schedules independent batch jobs across multiple cloud clusters while optimizing for load balancing. By specifying only high-level scheduling targets, RLSK learns strategies from environment interaction without prior knowledge of the multi-cluster setup, outperforming traditional scheduling algorithms in simulations.
   **Code**: Not available
 
 - **[Scheduling of Time-Varying Workloads Using Reinforcement Learning](https://ojs.aaai.org/index.php/AAAI/article/view/16190)**
   *Authors*: Shanka Subhra Mondal, Nikhil Sheoran, Subrata Mitra
   *Publication*: AAAI-2021
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: Addresses the challenge of scheduling production workloads with time-varying resource usage patterns that fluctuate significantly over time, which prior work overlooked. Proposes a DRL-based approach that exploits temporal resource patterns combined with an equivalence class technique to improve scalability, validated on real Google and Alibaba production traces showing improved cluster utilization, reduced fragmentation, and fewer resource exhaustion events.
   **Code**: Not available
 
 - **[SibylOpt: Managing Green Data Centers Using Off-Online Deep Reinforcement Learning](https://scholar.google.com/scholar?q=SibylOpt%3A%2BManaging%2BGreen%2BData%2BCenters%2BUsing%2BOff-Online%2BDeep%2BReinforcement%2BLearning)**
   *Authors*: Ning Gu, Kuo Zhang, Thu Nguyen, Peijian Wang, Tania Lorido Botran
   *Publication*: SoCC-2022
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: Proposes SibylOpt, which uses an off-online DRL approach combining offline pre-training on historical data with online fine-tuning to manage green data centers. The method optimizes energy efficiency and carbon-aware workload placement while meeting performance constraints, learning adaptive scheduling policies that balance energy costs with service quality.
   **Code**: Not available
 
 - **[SIMPPO: A Scalable and Incremental Online Learning Framework for Serverless Resource Management](https://scholar.google.com/scholar?q=SIMPPO:+A+Scalable+and+Incremental+Online+Learning+Framework+for+Serverless+Resource+Management)**
   *Authors*: Jiaming Huang, Chuming Xiao, Weigang Wu
   *Publication*: SoCC-2022
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: Proposes SIMPPO, a scalable and incremental multi-agent PPO framework for serverless FaaS resource management that addresses the convergence failures of single-agent RL in multi-tenant environments. SIMPPO enables each RL agent to converge efficiently during training while providing function latency performance comparable to isolated single-agent RL, reducing p99 function latency by 4.5x compared to single-agent RL in multi-tenant settings.
   **Code**: Not available
 
 - **[SLAs-Aware Online Task Scheduling Based on Deep Reinforcement Learning Method in Cloud Environment](https://scholar.google.com/scholar?q=SLAs-Aware+Online+Task+Scheduling+Based+on+Deep+Reinforcement+Learning+Method+in+Cloud+Environment)**
   *Authors*: Longyu Ran, Xiaoyu Shi, Mingsheng Shang
   *Publication*: HPCC-2019
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: Proposes a DRL-based online task scheduling method for cloud environments that explicitly considers Service Level Agreements (SLAs) as constraints during scheduling decisions. The approach learns to balance task throughput with SLA compliance, adapting to dynamic workload arrivals and heterogeneous cloud resources while minimizing SLA violations.
   **Code**: Not available
 
 - **[Spear: Optimized Dependency-Aware Task Scheduling with Deep Reinforcement Learning](https://scholar.google.com/scholar?q=Spear:+Optimized+Dependency-Aware+Task+Scheduling+with+Deep+Reinforcement+Learning)**
   *Authors*: Zhiming Hu, James Tu, Baochun Li
   *Publication*: ICDCS-2019
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: Presents Spear, which applies Monte Carlo Tree Search (MCTS) guided by a DRL model to minimize makespan for complex DAG-based jobs with heterogeneous multi-resource demands. The DRL model improves MCTS search efficiency by focusing on more promising scheduling branches. Evaluated on production workload traces, Spear outperforms state-of-the-art job schedulers by up to 20%.
   **Code**: Not available
 
 - **[Task Scheduling in Cloud Using Deep Reinforcement Learning](https://doi.org/10.1016/j.procs.2021.03.016)**
   *Authors*: Shashank Swarup, Elhadi M. Shakshuki, Ansar Yasar
   *Publication*: Code-2021
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: Applies deep reinforcement learning to cloud task scheduling, where a DRL agent learns to map incoming tasks to available cloud resources by considering task requirements and server capabilities. The approach is evaluated against traditional scheduling heuristics, demonstrating improved makespan and resource utilization in cloud environments.
   **Code**: Not available
 
 - **[Toward Efficient Compute-Intensive Job Allocation for Green Data Centers: A Deep Reinforcement Learning Approach](https://doi.org/10.32657/10356/104419)**
   *Authors*: Deliang Yi, Xin Zhou, Yonggang Wen, Rui Tan
   *Publication*: ICDCS-2019
-  *Summary*: This paper proposes a deep reinforcement learning approach for cloud resource scheduling. The method learns optimal scheduling policies through environment interaction, adapting to dynamic workload patterns and heterogeneous server capabilities. Experimental results demonstrate improved resource utilization, reduced job completion time, and better cost efficiency compared to traditional scheduling approaches.
+  *Summary*: Addresses compute-intensive job allocation in green data centers powered by renewable energy, formulating the problem as a cost optimization that balances electricity costs with job completion requirements. Proposes a DRL-based approach that learns adaptive allocation policies considering renewable energy availability, electricity pricing, and job characteristics, achieving efficient job scheduling while reducing energy costs.
   **Code**: Not available
 
 - **[SchedInspector: A Batch Job Scheduling Inspector Using Reinforcement Learning](https://scholar.google.com/scholar?q=SchedInspector:+A+Batch+Job+Scheduling+Inspector+Using+Reinforcement+Learning)**
@@ -347,49 +347,49 @@ This repository collects significant works that leverage DRL for cloud schedulin
 - **[A Meta Reinforcement Learning Approach for Predictive Autoscaling in the Cloud](https://scholar.google.com/scholar?q=A+Meta+Reinforcement+Learning+Approach+for+Predictive+Autoscaling+in+the+Cloud)**
   *Authors*: Siqiao Xue, Chao Qu, Xiaoming Shi, Cong Liao, Shiyi Zhu, Xiaoyu Tan, Lintao Ma, Shiyu Wang, Shijun Wang, Yun Hu
   *Publication*: KDD-2022
-  *Summary*: This paper presents a deep reinforcement learning approach for automatic scaling of cloud resources. The RL agent learns to adjust resource allocation based on real-time metrics and workload patterns, replacing static threshold-based rules. Evaluation shows improved SLO compliance, reduced resource waste, and faster response to workload changes compared to conventional autoscaling methods.
+  *Summary*: This paper proposes a meta model-based RL algorithm for predictive autoscaling that incorporates a deep periodic workload prediction model and embeds Neural Process to guide learning of optimal scaling actions across numerous application services. The approach enables scaling decisions to adapt to changing workloads with high sample efficiency while maintaining stable CPU utilization. Deployed online at Alipay, it significantly outperforms existing algorithms on the world-leading payment platform.
   **Code**: Not available
 
 - **[A-SARSA: A Predictive Container Auto-Scaling Algorithm Based on Reinforcement Learning](https://doi.org/10.1109/icws49710.2020.00072)**
   *Authors*: Shubo Zhang, Tianyang Wu, Maolin Pan, Chaomeng Zhang, Yang Yu
   *Publication*: ICWS-2020
-  *Summary*: This paper presents a reinforcement learning-based autoscaling mechanism for cloud services. The approach uses DRL to automatically adjust resource allocation based on workload patterns and performance requirements. The system achieves better SLO compliance and resource efficiency compared to rule-based scaling approaches.
+  *Summary*: This paper proposes A-SARSA, a predictive container auto-scaling algorithm that combines ARIMA time-series prediction and neural network models with the SARSA RL algorithm to address untimely scheduling and poor decision accuracy in container scaling. Experiments verify the algorithm significantly reduces SLA violation rates while maintaining good resource utilization levels.
   **Code**: Not available
 
 - **[AWARE Automate Workload Autoscaling with Reinforcement Learning in Production Cloud Systems](https://scholar.google.com/scholar?q=AWARE%2BAutomate%2BWorkload%2BAutoscaling%2Bwith%2BReinforcement%2BLearning%2Bin%2BProduction%2BCloud%2BSystems)**
   *Authors*: Haoran Qiu, Weichao Mao
   *Publication*: ATC-2023
-  *Summary*: This paper presents a deep reinforcement learning approach for automatic scaling of cloud resources. The RL agent learns to adjust resource allocation based on real-time metrics and workload patterns, replacing static threshold-based rules. Evaluation shows improved SLO compliance, reduced resource waste, and faster response to workload changes compared to conventional autoscaling methods.
+  *Summary*: This paper presents AWARE, a production system that bridges the gap between RL research and real-world deployment for workload autoscaling. AWARE provides RL bootstrapping, incremental online retraining, and fast policy adaptation, enabling learned policies to adapt to new workloads 5.5x faster than transfer-learning baselines with under 3.6% reward degradation. During training, it achieves 47.5% and 39.2% higher CPU and memory utilization while reducing SLO violations by 16.9x.
   **Code**: Not available
 
 - **[DScaler: A Horizontal Autoscaler of Microservice Based on Deep Reinforcement Learning](https://doi.org/10.23919/apnoms56106.2022.9919994)**
   *Authors*: Zhijiao Xiao, Song Hu
   *Publication*: APNOMS-2022
-  *Summary*: This paper presents a deep reinforcement learning approach for automatic scaling of cloud resources. The RL agent learns to adjust resource allocation based on real-time metrics and workload patterns, replacing static threshold-based rules. Evaluation shows improved SLO compliance, reduced resource waste, and faster response to workload changes compared to conventional autoscaling methods.
+  *Summary*: This paper proposes DScaler, a DRL-based horizontal pod autoscaler for Kubernetes microservices that overcomes the static threshold limitations of the built-in HPA under highly dynamic workloads. Under two different workload patterns, DScaler reduces resource consumption by 19.90% and 10.80% while reducing SLA violations by 8.56% and 12.75% compared to HPA, and cuts resource usage by approximately 60% compared to existing RL strategies.
   **Code**: Not available
 
 - **[Fast and Fine-grained Autoscaler for Streaming Jobs with Reinforcement Learning](https://arxiv.org/abs/2201.08439)**
   *Authors*: Mingzhe Xing, Hangyu Mao, Zhen Xiao
   *Publication*: IJCAI-2022
-  *Summary*: This paper presents a deep reinforcement learning approach for automatic scaling of cloud resources. The RL agent learns to adjust resource allocation based on real-time metrics and workload patterns, replacing static threshold-based rules. Evaluation shows improved SLO compliance, reduced resource waste, and faster response to workload changes compared to conventional autoscaling methods.
+  *Summary*: This paper proposes a fine-grained task-level autoscaler for streaming jobs that organizes running states as spatio-temporal graphs and uses a Neural Variational Subgraph Sampler with a mutual-information-based objective to efficiently extract representative subgraphs for RL decisions. Experiments on real-world datasets demonstrate superiority over six competitive baselines.
   **Code**: Not available
 
 - **[Intelligent microservices autoscaling module using reinforcement learning](https://doi.org/10.1007/s10586-023-03999-8)**
   *Authors*: Abeer Abdel Khaleq, Ilkyeun Ra
   *Publication*: CC-2023
-  *Summary*: This paper presents a deep reinforcement learning approach for automatic scaling of cloud resources. The RL agent learns to adjust resource allocation based on real-time metrics and workload patterns, replacing static threshold-based rules. Evaluation shows improved SLO compliance, reduced resource waste, and faster response to workload changes compared to conventional autoscaling methods.
+  *Summary*: This paper introduces an intelligent RL-based autoscaling module for horizontal scaling of microservices that customizes Kubernetes HPA using response time as a QoS metric. The agents are trained, validated, and deployed on Google Cloud, where they learn microservice resource usage patterns from the cloud environment. Results show decreased response time compared to the default Kubernetes HPA, with an extensible plug-in design adaptable to new QoS metrics.
   **Code**: Not available
 
 - **[Microscaler: Automatic Scaling for Microservices with an Online Learning Approach](https://doi.org/10.1109/icws.2019.00023)**
   *Authors*: Guangba Yu, Pengfei Chen, Zibin Zheng
   *Publication*: ICWS-2019
-  *Summary*: This paper presents a reinforcement learning-based autoscaling mechanism for cloud services. The approach uses DRL to automatically adjust resource allocation based on workload patterns and performance requirements. The system achieves better SLO compliance and resource efficiency compared to rule-based scaling approaches.
+  *Summary*: This paper presents Microscaler, a system that automatically identifies scaling-needed microservices and scales them to meet SLA with optimal cost. Using a service mesh-enabled infrastructure to collect QoS metrics, it determines under/over-provisioning services via a novel "service power" criterion and combines online learning (Bayesian optimization) with a step-by-step heuristic to achieve optimal scaling.
   **Code**: Not available
 
 - **[Reinforcement learning-assisted autoscaling mechanisms for serverless computing platforms](https://scholar.google.com/scholar?q=Reinforcement%2Blearning-assisted%2Bautoscaling%2Bmechanisms%2Bfor%2Bserverless)**
   *Authors*: Anastasios Zafeiropoulos, Eleni Fotopoulou, Nikos Filinis, Symeon Papavassiliou
   *Publication*: SMPT-2022
-  *Summary*: This paper presents a deep reinforcement learning approach for automatic scaling of cloud resources. The RL agent learns to adjust resource allocation based on real-time metrics and workload patterns, replacing static threshold-based rules. Evaluation shows improved SLO compliance, reduced resource waste, and faster response to workload changes compared to conventional autoscaling methods.
+  *Summary*: This paper develops RL-powered autoscaling mechanisms for serverless computing platforms using Q-learning, DynaQ+, and Deep Q-learning algorithms to manage dynamic workloads with QoS guarantees and efficient resource usage. The environments and agents are evaluated on the Kubeless open-source serverless platform in both real and simulated settings, validating their suitability for scalability management of serverless applications.
   **Code**: Not available
 
 - **[Cost-Efficient Reinforcement Learning-Based Horizontal Pod Autoscaling Technique in Kubernetes Cluster](https://scholar.google.com/scholar?q=Cost-Efficient+Reinforcement+Learning-Based+Horizontal+Pod+Autoscaling+Technique+in+Kubernetes+Cluster)**
@@ -455,7 +455,7 @@ This repository collects significant works that leverage DRL for cloud schedulin
 - **[Adversarial Attacks in a Deep Reinforcement Learning based Cluster Scheduler](https://doi.org/10.1109/mascots50786.2020.9285955)**
   *Authors*: Shaojun Zhang, Chen Wang, Albert Y. Zomaya
   *Publication*: 2020
-  *Summary*: This paper investigates the robustness and security of deep reinforcement learning-based schedulers in cloud environments. The study identifies vulnerabilities to adversarial attacks and proposes defense mechanisms to enhance scheduler stability. The work provides insights into the reliability of DRL schedulers under varying conditions.
+  *Summary*: This paper investigates the vulnerability of DRL-based cluster schedulers to adversarial attacks. The authors propose a white-box attack method that perturbs job features to mislead the DRL scheduler into making suboptimal scheduling decisions. Experiments show that even small perturbations to job feature inputs can significantly degrade scheduling performance, highlighting the need for robustness mechanisms in DRL-based schedulers.
   **Code**: Not available
 
 - **[Adversarial Deep Learning for Online Resource Allocation](https://doi.org/10.1145/3494526)**
@@ -467,7 +467,7 @@ This repository collects significant works that leverage DRL for cloud schedulin
 - **[Robustness Analysis and Enhancement of Deep Reinforcement Learning-Based Schedulers](https://doi.org/10.1109/tpds.2022.3218649)**
   *Authors*: Shaojun Zhang, Chen Wang, Albert Y. Zomaya
   *Publication*: 2023
-  *Summary*: This paper investigates the robustness and security of deep reinforcement learning-based schedulers in cloud environments. The study identifies vulnerabilities to adversarial attacks and proposes defense mechanisms to enhance scheduler stability. The work provides insights into the reliability of DRL schedulers under varying conditions.
+  *Summary*: This paper investigates the vulnerability of DRL-based cluster schedulers to adversarial attacks. The authors propose a white-box attack method that perturbs job features to mislead the DRL scheduler into making suboptimal scheduling decisions. Experiments show that even small perturbations to job feature inputs can significantly degrade scheduling performance, highlighting the need for robustness mechanisms in DRL-based schedulers.
   **Code**: Not available
 
 ---
@@ -949,67 +949,67 @@ This repository collects significant works that leverage DRL for cloud schedulin
 - **[A comprehensive survey for scheduling techniques in cloud computing](https://scholar.google.com/scholar?q=A+comprehensive+survey+for+scheduling+techniques+in+cloud+computing)**
   *Authors*: Mohit Kumar, S.C. Sharma, Anubhav Goel, S.P. Singh
   *Publication*: JNCA-2019
-  *Summary*: This paper provides a comprehensive survey and taxonomy of approaches in the field. The review covers existing methods, identifies research gaps, and outlines future directions for the area of cloud computing, autoscaling, or reinforcement learning.
+  *Summary*: This survey provides a comprehensive review and taxonomy of scheduling techniques in cloud computing, covering static and dynamic algorithms, meta-heuristic approaches, and machine learning-based methods. It classifies techniques by optimization objectives (makespan, cost, energy, load balancing) and identifies open research challenges for future cloud scheduling systems.
   **Code**: Not available
 
 - **[A Survey and Taxonomy of Self-Aware and Self-Adaptive Cloud Autoscaling Systems](https://scholar.google.com/scholar?q=A%2BSurvey%2Band%2BTaxonomy%2Bof%2BSelf-Aware%2Band%2BSelf-Adaptive%2BCloud%2BAutoscaling%2BSystems)**
   *Authors*: Tao Chen, Rami Bahsoon, Xin Yao
   *Publication*: ACMComSur-2018
-  *Summary*: This paper provides a comprehensive survey and taxonomy of approaches in the field. The review covers existing methods, identifies research gaps, and outlines future directions for the area of cloud computing, autoscaling, or reinforcement learning.
+  *Summary*: This survey presents a taxonomy of self-aware and self-adaptive autoscaling systems in cloud computing, organizing approaches along multiple knowledge dimensions (space, time, quality, quantity). The review compares autoscaling techniques across their self-awareness capabilities and identifies trade-offs between different knowledge sources, providing a roadmap for designing next-generation autoscaling systems.
   **Code**: Not available
 
 - **[A Survey on Issues and Challenges of Load Balancing Techniques in Cloud Computing Environment](https://scholar.google.com/scholar?q=A%2BSurvey%2Bon%2BIssues%2Band%2BChallenges)**
   *Authors*: Febina K S, Tanuja Hemchand, Shamimunnisabi ., Roopa P, Aishwarya P
   *Publication*: ACS-2019
-  *Summary*: This paper provides a comprehensive survey and taxonomy of approaches in the field. The review covers existing methods, identifies research gaps, and outlines future directions for the area of cloud computing, autoscaling, or reinforcement learning.
+  *Summary*: This survey reviews load balancing techniques in cloud computing environments, categorizing approaches by their handling of static and dynamic workloads. It discusses key challenges including workload heterogeneity, fault tolerance, and energy efficiency, and compares existing techniques to identify gaps for future research.
   **Code**: Not available
 
 - **[Beyond games: a systematic review of neural Monte Carlo tree search applications](https://scholar.google.com/scholar?q=Beyond+games:+a+systematic+review+of+neural+Monte+Carlo+tree+search+applications)**
   *Authors*: Marco Kemmerling, Daniel Lütticke, Robert H. Schmitt
   *Publication*: AppIn-2024
-  *Summary*: This paper provides a comprehensive survey and taxonomy of approaches in the field. The review covers existing methods, identifies research gaps, and outlines future directions for the area of cloud computing, autoscaling, or reinforcement learning.
+  *Summary*: This systematic review examines neural Monte Carlo Tree Search (NMCTS) applications beyond traditional game-playing domains. The survey covers how neural networks are integrated with MCTS for complex decision-making in real-world applications such as optimization, planning, and control, identifying patterns of successful domain adaptation and open challenges.
   **Code**: Not available
 
 - **[Cloud Dynamic Load Balancing and Reactive Fault Tolerance Techniques: A Systematic Literature Review (SLR)](https://scholar.google.com/scholar?q=Cloud+Dynamic+Load+Balancing+and+Reactive+Fault+Tolerance+Techniques:+A+Systematic+Literature+Review+SLR)**
   *Authors*: Tawfeeg Mohmmed Tawfeeg, Adil Yousif, Alzubair Hassan, Samar M. Alqhtani, Rafik Hamza, Mohammed Bakri Bashir, Awad Ali
   *Publication*: IEEE-Access-2022
-  *Summary*: This paper provides a comprehensive survey and taxonomy of approaches in the field. The review covers existing methods, identifies research gaps, and outlines future directions for the area of cloud computing, autoscaling, or reinforcement learning.
+  *Summary*: This systematic literature review examines dynamic load balancing and reactive fault tolerance techniques in cloud computing environments. The survey classifies approaches by their handling of workload dynamics and failure scenarios, analyzing how load balancing and fault tolerance mechanisms interact to maintain service availability and performance.
   **Code**: Not available
 
 - **[Deep Reinforcement Learning: A Survey](https://doi.org/10.1109/tnnls.2022.3207346)**
   *Authors*: Xu Wang, Sen Wang, Xingxing Liang, Dawei Zhao, Jincai Huang, Xin Xu, Bin Dai, Qiguang Miao
   *Publication*: 2024
-  *Summary*: This paper provides a comprehensive survey of the field, covering key methodologies, comparing different approaches, and identifying open challenges and future research directions. The taxonomy and analysis serve as a reference for researchers and practitioners in the domain.
+  *Summary*: This survey provides a comprehensive review of deep reinforcement learning, covering fundamental concepts, algorithmic paradigms (value-based, policy-based, actor-critic, model-based), and recent advances. It discusses DRL applications across multiple domains including cybersecurity, robotics, and resource management, and identifies open challenges and future research directions.
   **Code**: Not available
 
 - **[Load balancing techniques in cloud computing environment: A review](https://scholar.google.com/scholar?q=Load+balancing+techniques+in+cloud+computing+environment:+A+review)**
   *Authors*: Dalia Abdulkareem Shafiq, N.Z. Jhanjhi, Azween Abdullah
   *Publication*: JKSU-CIS-2022
-  *Summary*: This paper provides a comprehensive survey and taxonomy of approaches in the field. The review covers existing methods, identifies research gaps, and outlines future directions for the area of cloud computing, autoscaling, or reinforcement learning.
+  *Summary*: This review surveys load balancing techniques in cloud computing environments, categorizing them into static and dynamic approaches. The paper analyzes performance metrics including response time, throughput, resource utilization, and scalability, comparing trade-offs across different algorithms and identifying suitable techniques for specific cloud workload scenarios.
   **Code**: Not available
 
 - **[Machine Learning-based Orchestration of Containers: A Taxonomy and Future Directions](https://scholar.google.com/scholar?q=Machine+Learning-based+Orchestration+of+Containers:+A+Taxonomy+and+Future+Directions)**
   *Authors*: Zhiheng Zhong, Minxian Xu, Maria Alejandra Rodriguez, Chengzhong Xu, Rajkumar Buyya
   *Publication*: ACMComSur-2022
-  *Summary*: This paper provides a comprehensive survey and taxonomy of approaches in the field. The review covers existing methods, identifies research gaps, and outlines future directions for the area of cloud computing, autoscaling, or reinforcement learning.
+  *Summary*: This survey presents a taxonomy of machine learning-based container orchestration approaches, covering scheduling, autoscaling, placement, and migration. It systematically reviews how supervised learning, reinforcement learning, and other ML techniques are applied to container orchestration decisions, and identifies gaps in current research for future directions.
   **Code**: Not available
 
 - **[Monte Carlo Tree Search: a review of recent modifications and applications](https://scholar.google.com/scholar?q=Monte+Carlo+Tree+Search:+a+review+of+recent+modifications+and+applications)**
   *Authors*: Maciej Świechowski, Konrad Godlewski, Bartosz Sawicki, Jacek Mańdziuk
   *Publication*: AIR-2023
-  *Summary*: This paper provides a comprehensive survey and taxonomy of approaches in the field. The review covers existing methods, identifies research gaps, and outlines future directions for the area of cloud computing, autoscaling, or reinforcement learning.
+  *Summary*: This survey reviews Monte Carlo Tree Search (MCTS) modifications and applications published since the last major survey in 2012. It covers domain-specific adaptations and hybrid approaches required for efficient MCTS application in complex games with high branching factors, real-time games, and practical domains such as transportation, scheduling, and security.
   **Code**: Not available
 
 - **[Reinforcement learning-based application Autoscaling in the Cloud: A survey](https://scholar.google.com/scholar?q=Reinforcement+learning-based+application+Autoscaling+in+the+Cloud:+A+survey)**
   *Authors*: Yisel Garí, David A. Monge, Elina Pacini, Cristian Mateos, Carlos García Garino
   *Publication*: ENG APPL ARTIF INTEL-2021
-  *Summary*: This paper presents a deep reinforcement learning approach for automatic scaling of cloud resources. The RL agent learns to adjust resource allocation based on real-time metrics and workload patterns, replacing static threshold-based rules. Evaluation shows improved SLO compliance, reduced resource waste, and faster response to workload changes compared to conventional autoscaling methods.
+  *Summary*: This survey exhaustively reviews RL-based approaches to application autoscaling in cloud computing, comparing proposals uniformly through proposed taxonomies. It highlights that RL enables transparent (no human intervention), dynamic (no static plans), and adaptable (constantly updated) resource management policies -- three distinctive advantages over ad-hoc or statically computed autoscaling methods. The paper also discusses open problems and prospective research directions in the area.
   **Code**: Not available
 
 - **[State of the Art on Microservices Autoscaling: An Overview](https://www.sbc.org.br/journal)**
   *Authors*: João Paulo K. S. Nunes, Thiago Bianchi, Anderson Y. Iwasaki, Elisa Yumi Nakagawa
   *Publication*: SBC-2021
-  *Summary*: This paper provides a comprehensive survey and taxonomy of approaches in the field. The review covers existing methods, identifies research gaps, and outlines future directions for the area of cloud computing, autoscaling, or reinforcement learning.
+  *Summary*: This survey reviews the state of the art in microservices autoscaling, analyzing approaches across reactive, proactive, and hybrid categories. It examines how autoscaling mechanisms handle the unique challenges of microservice architectures—such as inter-service dependencies and cascading scaling effects—and identifies open challenges in evaluation methodologies and real-world deployment.
   **Code**: Not available
 
 ---
@@ -1019,37 +1019,37 @@ This repository collects significant works that leverage DRL for cloud schedulin
 - **[GrandSLAm: Guaranteeing SLAs for Jobs in Microservices Execution Frameworks](https://scholar.google.com/scholar?q=GrandSLAm:+Guaranteeing+SLAs+for+Jobs+in+Microservices+Execution+Frameworks)**
   *Authors*: Ingo Muller, Istemi Ekin Akkus, Ruichuan Chen, Jimmy Lin, Pascal Bodik
   *Publication*: EuroSys-2019
-  *Summary*: This paper describes the design and implementation of a large-scale distributed system or scheduling platform for cloud computing. The system addresses challenges in resource management, fault tolerance, and scalability in production environments.
+  *Summary*: This paper presents GrandSLAm, a microservices execution framework that guarantees job-level SLAs by dynamically scheduling microservice instances across nodes. GrandSLAm formulates SLA compliance as a constraint optimization problem and uses a scalable scheduling algorithm to place microservice instances while respecting resource and SLA constraints, achieving high SLA compliance rates for batch jobs in microservice environments.
   **Code**: Not available
 
 - **[Large-scale cluster management at Google with Borg](https://scholar.google.com/scholar?q=Large-scale+cluster+management+at+Google+with+Borg)**
   *Authors*: Abhishek Verma, Luis Pedrosa, Madhukar Korupolu, David Oppenheimer, Eric Tune, John Wilkes
   *Publication*: EuroSys-2015
-  *Summary*: This paper describes the design and implementation of a large-scale distributed system or scheduling platform for cloud computing. The system addresses challenges in resource management, fault tolerance, and scalability in production environments.
+  *Summary*: This paper presents Borg, Google's cluster management system that runs hundreds of thousands of jobs from thousands of different applications on tens of thousands of machines. Borg uses prioritized admission control, overcommitment, and fine-grained resource allocation to achieve high utilization while meeting QoS requirements. The design insights from Borg influenced open-source systems including Kubernetes and Mesos.
   **Code**: Not available
 
 - **[LegoOS: A Disseminated, Distributed OS for Hardware Resource Disaggregation](https://www.usenix.org/conference/osdi18/presentation/shan)**
   *Authors*: Yizhou Shan, Yutong Huang, Yilun Chen, Yalei Wang
   *Publication*: OSDI-2018
-  *Summary*: This paper describes the design and implementation of a large-scale distributed system or scheduling platform for cloud computing. The system addresses challenges in resource management, fault tolerance, and scalability in production environments.
+  *Summary*: This paper presents LegoOS, a distributed operating system that runs on a datacenter with disaggregated hardware resources (CPUs, memory, and storage on separate physical machines). LegoOS introduces disseminated OS components called Lego Modules that manage resource composition across disaggregated hardware, achieving 1.33x better price-performance than traditional servers under various workloads.
   **Code**: Not available
 
 - **[Overload Control for Scaling WeChat Microservices](https://scholar.google.com/scholar?q=Overload+Control+for+Scaling+WeChat+Microservices)**
   *Authors*: Hao Zhou, Ming Chen, Qian Lin, Yong Wang, Xiaobin She, Sifan Liu, Rui Gu, Beng Chin Ooi, Junfeng Yang
   *Publication*: SoCC-2018
-  *Summary*: This paper describes the design and implementation of a large-scale distributed system or scheduling platform for cloud computing. The system addresses challenges in resource management, fault tolerance, and scalability in production environments.
+  *Summary*: This paper describes the overload control system built for WeChat's microservice architecture, handling billions of users. The system uses a feedback-based approach with request admission control, priority-based dropping, and dynamic resource allocation to maintain service availability during traffic spikes. Deployed in production at Tencent, it effectively handles overload scenarios that would otherwise cascade across microservice dependencies.
   **Code**: Not available
 
 - **[Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing](https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/zaharia)**
   *Authors*: Matei Zaharia, Mosharaf Chowdhury, Tathagata Das, Ankur Dave, Justin Ma
   *Publication*: NSDI-2012
-  *Summary*: This paper describes the design and implementation of a large-scale distributed system or scheduling platform for cloud computing. The system addresses challenges in resource management, fault tolerance, and scalability in production environments.
+  *Summary*: This paper introduces RDDs (Resilient Distributed Datasets), a distributed memory abstraction for fault-tolerant in-memory cluster computing. RDDs provide a programming model that enables efficient data sharing across parallel operations with automatic fault recovery through lineage reconstruction, forming the foundation of the Apache Spark framework and achieving orders-of-magnitude speedup over disk-based systems like Hadoop MapReduce.
   **Code**: Not available
 
 - **[Service Fabric: A Distributed Platform for Building Microservices in the Cloud](https://scholar.google.com/scholar?q=Service+Fabric:+A+Distributed+Platform+for+Building+Microservices+in+the+Cloud)**
   *Authors*: Marc Brooker, Anna Waksman, Mikhail Shilkov
   *Publication*: EuroSys-2018
-  *Summary*: This paper describes the design and implementation of a large-scale distributed system or scheduling platform for cloud computing. The system addresses challenges in resource management, fault tolerance, and scalability in production environments.
+  *Summary*: This paper presents Azure Service Fabric, a distributed systems platform for building and managing scalable microservices. Service Fabric provides reliable actor and service programming models, automatic partitioning, failover, and placement management. It enables developers to build cloud-native applications with built-in reliability, scaling, and lifecycle management capabilities, powering production services at Microsoft including Azure SQL Database and Skype.
   **Code**: Not available
 
 - **[FIRM: An Intelligent Fine-Grained Resource Management Framework for SLO-Oriented Microservices](https://www.usenix.org/conference/osdi20/presentation/guo)**
