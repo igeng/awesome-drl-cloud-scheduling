@@ -60,73 +60,73 @@ This repository collects significant works that leverage DRL for cloud schedulin
   *Summary*: This paper addresses the challenge of autoscaling microservice applications, where complex service dependencies make it difficult to identify which services need scaling during workload spikes. Microscaler collects QoS metrics from the service mesh, identifies scaling-needed services using a novel "service power" criterion along the dependency graph, and combines Bayesian optimization-based online learning with step-by-step heuristics to reach optimal scaling. Evaluations on a microservice benchmark show 93% precision in identifying scaling-needed services and faster convergence to optimal service scale than state-of-the-art methods.
   **Code**: Not available
 
-- **[A Dual-Agent Scheduler for Distributed Deep Learning Jobs on Public Cloud via Reinforcement Learning]
+- **[A Dual-Agent Scheduler for Distributed Deep Learning Jobs on Public Cloud via Reinforcement Learning](https://scholar.google.com/scholar?q=A+Dual-Agent+Scheduler+for+Distributed+Deep+Learning+Jobs+on+Public+Cloud+via+Reinforcement+Learning)**
   *Authors*: Mingzhe Xing, Hangyu Mao, Shenglin Yin, Lichen Pan, Zhengchao Zhang, Zhen Xiao, Jieyi Long
   *Publication*: KDD-2023
   *Summary*: This paper tackles distributed deep learning job scheduling on public cloud GPU clusters, where existing methods typically optimize job ordering or placement independently without considering their cooperation. A dual-agent reinforcement learning framework is proposed: an ordering agent uses a scalable squeeze-and-communicate strategy for coordinated job sequencing, while a placement agent employs a Random Walk Gaussian Process to model GPU machine performance similarities and account for resource contention. Experiments show the dual-agent scheduler reduces training fees and job completion time compared to baselines.
   **Code**: Not available
 
-- **[A heuristic multi-objective task scheduling framework for container-based clouds via actor-critic reinforcement learning]
+- **[A heuristic multi-objective task scheduling framework for container-based clouds via actor-critic reinforcement learning](https://scholar.google.com/scholar?q=A+heuristic+multi-objective+task+scheduling+framework+for+container-based+clouds+via+actor-critic+reinforcement+learning)**
   *Authors*: Lilu Zhu, Feng Wu, Yanfeng Hu, Kai Huang, Xinmei Tian
   *Publication*: 2023
   *Summary*: This paper proposes AC-CCTS, a heuristic multi-objective task scheduling framework for container-based clouds that balances business performance (QoS) and resource utilization efficiency during peak application access periods. Built on the actor-critic algorithm, it incorporates heuristic rules and prioritized experience replay to accelerate convergence, a compensation mechanism for robustness, and a dynamic scheduling model for container cloud environments. Compared with meta-heuristic methods (FIMPSO, HWOA-MBA) and other RL algorithms (DeepRM-Plus, RLSched), AC-CCTS demonstrates better resource utilization efficiency and convergence stability.
   **Code**: Not available
 
-- **[A Hierarchical Framework of Cloud Resource Allocation and Power Management Using Deep Reinforcement Learning]
+- **[A Hierarchical Framework of Cloud Resource Allocation and Power Management Using Deep Reinforcement Learning](https://doi.org/10.1109/icdcs.2017.123)**
   *Authors*: Ning Liu, Zhe Li, Jielong Xu, Zhiyuan Xu, Sheng Lin, Qinru Qiu, Jian Tang, Yanzhi Wang
   *Publication*: ICDCS-2017
   *Summary*: This paper proposes a hierarchical framework for jointly optimizing VM resource allocation and dynamic power management in cloud computing systems. The global tier uses deep reinforcement learning with an autoencoder and weight sharing structure to handle high-dimensional state spaces for VM-to-server allocation, while the local tier combines LSTM-based workload prediction with model-free RL for distributed server power management. Evaluated on Google cluster traces, the framework significantly reduces power consumption and energy usage compared to baselines without severe latency degradation.
   **Code**: Not available
 
-- **[A multi-objective trade-off framework for cloud resource scheduling based on the Deep Q-network algorithm]
+- **[A multi-objective trade-off framework for cloud resource scheduling based on the Deep Q-network algorithm](https://scholar.google.com/scholar?q=A+multi-objective+trade-off+framework+for+cloud+resource+scheduling+based+on+the+Deep+Q-network+algorithm)**
   *Authors*: Zhiping Peng, Jianpeng Lin, Delong Cui, Qirui Li, Jieguang He
   *Publication*: Cluster Computing-2022
   *Summary*: This paper addresses the conflict between cloud service providers minimizing energy costs and users seeking optimized service quality through an online DQN-based resource scheduling framework. The framework enables dynamic trade-offs between energy consumption and task makespan by adjusting the proportion of rewards assigned to each optimization objective. Experiments demonstrate the framework effectively balances these competing objectives and achieves clear improvements over baseline algorithms.
   **Code**: Not available
 
-- **[Actor-Critic with Transformer for Cloud Computing Resource Three Stage Job Scheduling]
+- **[Actor-Critic with Transformer for Cloud Computing Resource Three Stage Job Scheduling](https://doi.org/10.1109/icccbda55098.2022.9778883)**
   *Authors*: Yanbo Xu, Jiakun Zhao
   *Publication*: ICCCBDA-2022
   *Summary*: This paper presents ACT4JS, an actor-critic with transformer algorithm for three-stage job scheduling that manages data centers, server nodes, and application containers. The algorithm uses transformer network structures and proximal policy optimization (PPO) for feature learning and loss optimization, handling both single-task multi-instance jobs and DAG jobs with dependencies. Experiments show ACT4JS achieves lower energy consumption costs and task reject rates than mainstream baselines under online training.
   **Code**: Not available
 
-- **[Adaptive and Efficient Resource Allocation in Cloud Datacenters Using Actor-Critic Deep Reinforcement Learning]
+- **[Adaptive and Efficient Resource Allocation in Cloud Datacenters Using Actor-Critic Deep Reinforcement Learning](https://doi.org/10.1109/tpds.2021.3132422)**
   *Authors*: Zheyi Chen, Jia Hu, Geyong Min, Chunbo Luo, Tarek El-Ghazawi
   *Publication*: TPDS-2022
   *Summary*: This paper proposes an actor-critic deep reinforcement learning scheme for adaptive cloud datacenter resource allocation that does not require prior knowledge of the system. The actor parameterizes the scheduling policy while the critic evaluates actions, with policy updates using gradient ascent and variance reduction via an advantage function to improve training efficiency. Evaluated on Google cloud datacenter traces, the method achieves superior latency, lower job dismissal rate, and enhanced energy efficiency compared to two advanced DRL-based and five classic resource allocation methods.
   **Code**: Not available
 
-- **[ADRL: A Hybrid Anomaly-Aware Deep Reinforcement Learning-Based Resource Scaling in Clouds]
+- **[ADRL: A Hybrid Anomaly-Aware Deep Reinforcement Learning-Based Resource Scaling in Clouds](https://doi.org/10.1109/tpds.2020.3025914)**
   *Authors*: Sara Kardani-Moghaddam, Rajkumar Buyya, Kotagiri Ramamohanarao
   *Publication*: TPDS-2021
   *Summary*: This paper proposes ADRL, a hybrid anomaly-aware deep reinforcement learning approach for dynamic vertical resource scaling in clouds. ADRL integrates anomaly detection techniques to trigger scaling actions in response to identified anomalous states, employing two levels of global and local decision-makers to handle required scaling actions. Experiments across different anomaly scenarios show ADRL significantly improves QoS with fewer scaling actions and increased system stability compared to threshold-based and time series methods.
   **Code**: Not available
 
-- **[Cloud Resource Scheduling With Deep Reinforcement Learning and Imitation Learning]
+- **[Cloud Resource Scheduling With Deep Reinforcement Learning and Imitation Learning](https://doi.org/10.1109/jiot.2020.3025015)**
   *Authors*: Wenxia Guo, Wenhong Tian, Yufei Ye, Lingxiao Xu, Kui Wu
   *Publication*: IOTJ-2021
   *Summary*: This paper presents DeepRM_Plus, a deep RL-based solution using a convolutional neural network to model cloud resource management and imitation learning to accelerate policy training. By combining imitation learning into the reinforcement process, DeepRM_Plus converges 37.5% faster than the state-of-the-art DeepRM algorithm. It also reduces the average weighted turnaround time by 51.85% and average cycling time by 11.51%.
   **Code**: Not available
 
-- **[Cost-aware job scheduling for cloud instances using deep reinforcement learning]
+- **[Cost-aware job scheduling for cloud instances using deep reinforcement learning](https://scholar.google.com/scholar?q=Cost-aware+job+scheduling+for+cloud+instances+using+deep+reinforcement+learning)**
   *Authors*: Feng Cheng, Yifeng Huang, Bhavana Tanpure, Pawan Sawalani, Long Cheng, Cong Liu
   *Publication*: Cluster Computing-2022
   *Summary*: This paper addresses real-time job scheduling for dynamic cloud workloads where user requests arrive continuously, unlike most existing approaches designed for batch jobs. A DQN-based scheduler is developed that optimizes both QoS for end-users and cost reduction on virtual machine instances. Experimental results demonstrate the DQN scheduler significantly outperforms commonly used real-time scheduling algorithms in both QoS and cost metrics.
   **Code**: Not available
 
-- **[Data Centers Job Scheduling with Deep Reinforcement Learning]
+- **[Data Centers Job Scheduling with Deep Reinforcement Learning](https://scholar.google.com/scholar?q=Data+Centers+Job+Scheduling+with+Deep+Reinforcement+Learning)**
   *Authors*: Sisheng Liang, Zhou Yang, Fang Jin, Yong Chen
   *Publication*: PAKDD-2020
   *Summary*: This paper proposes A2cScheduler, an Advantage Actor-Critic (A2C) deep reinforcement learning approach for job scheduling in data centers with heterogeneous resources. A2cScheduler employs two agents -- an actor that learns the scheduling policy and a critic that reduces estimation error -- designed to minimize gradient estimation variance and update parameters more efficiently than previous policy gradient methods. The approach achieves competitive scheduling performance on both simulated workloads and real data collected from an academic data center.
   **Code**: Not available
 
-- **[DDQN-TS: A novel bi-objective intelligent scheduling algorithm in the cloud environment]
+- **[DDQN-TS: A novel bi-objective intelligent scheduling algorithm in the cloud environment](https://scholar.google.com/scholar?q=DDQN-TS:+A+novel+bi-objective+intelligent+scheduling+algorithm+in+the+cloud+environment)**
   *Authors*: Zhao Tong, Feng Ye, Bilan Liu, Jinhui Cai, Jing Mei
   *Publication*: Neurocomputing-2021
   *Summary*: This paper addresses dynamic online task scheduling in cloud environments where limited resources must serve high-QoS requests. The proposed DDQN-TS algorithm uses the adaptive learning capability of Double Deep Q-Network (DDQN) to explore optimal scheduling strategies, mitigating the overestimation bias of standard DQN. Experiments on Random, Google, and Alibaba benchmarks show DDQN-TS guarantees a high task completion rate and effectively reduces average task response time compared to classic scheduling algorithms.
   **Code**: Not available
 
-- **[Deep Reinforcement Learning based Compute-Intensive Workload Allocation in Data Centers with High Energy Efficiency]
+- **[Deep Reinforcement Learning based Compute-Intensive Workload Allocation in Data Centers with High Energy Efficiency](https://doi.org/10.1109/iccc52777.2021.9580316)**]
   *Authors*: Zhenfeng Gao, Wei Liu, Long Suo, Jiandong Li, Yijun Lu
   *Publication*: ICCC-2021
   *Summary*: This paper proposes AC-CIWAS, an Actor-Critic deep reinforcement learning scheme for allocating compute-intensive workloads to physical servers in data centers to reduce energy consumption while guaranteeing QoS. The method continuously captures dynamic server states and uses a DRL-based Actor-Critic algorithm to evaluate cumulative returns that guide energy-efficient workload allocation. Simulations show AC-CIWAS reduces server power consumption by approximately 20 percent compared to baseline methods while maintaining QoS.
